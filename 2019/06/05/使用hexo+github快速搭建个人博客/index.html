@@ -73,7 +73,7 @@
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="https://sakura.hojun.cn">
-          <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+          <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6https://i.loli.net/2019/06/06/5cf8a9cc987ab19351.gif">
         </a>
       </div>
       <div class="header-info">
@@ -402,40 +402,52 @@
           </header>
         
         <div class="entry-content">
-          <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装前提<br>在安装前，先确保电脑上已经安装了 Node.js 和 Git 环境。</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>sudo npm install hexo-cli -g<br>官方是使用 npm 进行安装，相关文章推荐使用 yarn 进行安装，关于 yarn 和 npm 优劣分析，可以参考这篇文章《Yarn vs npm: 你需要知道的一切》</p>
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>先新建一个 blog 文件夹，然后进入该文件夹运行：</p>
-<p>初始化: hexo init<br>继续运行: hexo g &amp;&amp; hexo s</p>
+          <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装前提<br>在安装前，先确保电脑上已经安装了 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 和 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>环境。<br><img src="https://i.loli.net/2019/05/22/5ce4d88b2330e96430.png" alt></p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></h2><p><code>sudo npm install hexo-cli -g</code><br>官方是使用 <code>npm</code> 进行安装，有推荐使用 <a href="https://yarnpkg.com/zh-Hans/" target="_blank" rel="noopener">yarn</a>进行安装，关于 <code>yarn</code>和 <code>npm</code> 优劣分析，可以参考这篇文章<a href="http://web.jobbole.com/88459/" target="_blank" rel="noopener">《Yarn vs npm: 你需要知道的一切》</a></p>
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>先新建一个<code>blog</code>文件夹，然后进入该文件夹运行：</p>
+<p>初始化: <code>hexo init</code><br>继续运行: <code>hexo g &amp;&amp; hexo s</code></p>
 <p>运行成功后会发现提示信息：</p>
-<p>MacOSdeMacBook-Pro:lovely macos$ hexo s<br>INFO  Start processing<br>INFO  Hexo is running at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop<br>这个时候访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就会发现网站已经建好了！</p>
+<pre><code>MacOSdeMacBook-Pro:lovely macos$ hexo s
+INFO  Start processing
+INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop
+</code></pre><p>这个时候访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就会发现网站已经建好了！</p>
 <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>以下 4 个是我在搭建过程中发现使用频率最高的 4 个命令，甚至我感觉只要会这 4 个命令就可以了。</p>
-<p>1.generate<br>生成静态文件<br>hexo generate</p>
-<p>2.server<br>启动服务器<br>hexo server</p>
-<p>3.deploy<br>部署网站<br>hexo deplo</p>
-<p>4.clean<br>清除缓存文件（db.json）和已生成的静态文件（public）<br>hexo clean</p>
-<p>更多命令和参数请看 这里！</p>
-<h3 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h3><p>首先先到 Github 上新建一个仓库，仓库名的格式为：<br>*.github.io<br>例如我的就是 dearzhe.github.io ，创建好后，复制仓库的 HTTPS地址，打开 blog 根目录下的 _config.yml文件，拖动到底部找到 deploy 配置，按照以下格式修改并保存：</p>
-<p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master<br>这个时候安装 hexo-deployer-git 自动部署发布工具<br>npm install hexo-deployer-git –save</p>
-<h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>设置user name和email：</p>
+<p>1.generate<br>生成静态文件<br><code>hexo generate</code></p>
+<p>2.server<br>启动服务器<br><code>hexo server</code></p>
+<p>3.deploy<br>部署网站<br><code>hexo deploy</code></p>
+<p>4.clean<br>清除缓存文件（db.json）和已生成的静态文件（public）<br><code>hexo clean</code></p>
+<p>更多命令和参数请看 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">这里</a>！</p>
+<h3 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h3><p>首先先到 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 上新建一个仓库，仓库名的格式为：<br><code>*.github.io</code><br>例如我的就是<code>dearzhe.github.io</code> ，创建好后，复制仓库的 HTTPS地址，打开<code>blog</code>根目录下的 <code>_config.yml</code>文件，拖动到底部找到<code>deploy</code>配置，按照以下格式修改并保存：</p>
+<p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master<br>这个时候安装 hexo-deployer-git 自动部署发布工具<br><code>npm install hexo-deployer-git --save</code></p>
+<h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>设置<code>user name</code>和<code>email</code>：</p>
 <p>git config –global user.name “你的GitHub用户名”<br>git config –global user.email “你的GitHub注册邮箱”<br>生成ssh密钥:输入下面命令</p>
-<p>ssh-keygen -t rsa -C “你的GitHub注册邮箱”</p>
-<p>一般情况下是不需要密码的，所以，接下来直接回车就好。<br>此时，在用户文件夹下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub。<br>vim ~/.ssh/id_rsa.pub</p>
-<p>注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。</p>
-<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>###安装 NexT<br>git clone <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>
-<p>修改_config.yml 文件里 theme 配置：</p>
-<p>theme: hexo-theme-next</p>
-<p>切换成NexT主题，在hexo根文件夹下，编辑_config.yml文件</p>
-<p>theme: hexo-theme-next</p>
-<p>切换后，清下本地缓存<br>hexo clean</p>
-<p>执行hexo s本地产看NexT主题效果</p>
+<p><code>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></p>
+<p>一般情况下是不需要密码的，所以，接下来直接回车就好。<br>此时，在用户文件夹下就会有一个新的文件夹<code>.ssh</code>，里面有刚刚创建的<code>ssh</code>密钥文件<code>id_rsa</code>和<code>id_rsa.pub</code>。<br><code>vim ~/.ssh/id_rsa.pub</code></p>
+<p>注：<code>id_rsa</code>文件是私钥，要妥善保管，<code>id_rsa.pub</code>是公钥文件。</p>
+<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>###安装 NexT<br><code>git clone https://github.com/theme-next/hexo-theme-next</code></p>
+<p>修改<code>_config.yml</code> 文件里 <code>theme</code> 配置：</p>
+<p><code>theme: hexo-theme-next</code></p>
+<p>切换成NexT主题，在<code>hexo</code>根文件夹下，编辑<code>_config.yml</code>文件</p>
+<p><code>theme: hexo-theme-next</code></p>
+<p>切换后，清下本地缓存<br><code>hexo clean</code></p>
+<p>执行<code>hexo s</code>本地产看<code>NexT</code>主题效果</p>
 <p>切换主题<br>在列表中选择一款自己喜欢的主题风格。</p>
 <h1 id="Schemes"><a href="#Schemes" class="headerlink" title="Schemes"></a>Schemes</h1><p>scheme: Muse  //默认主题</p>
 <p>#scheme: Mist</p>
 <p>#scheme: Pisces //我选的是这个</p>
-<p>#scheme: Gemini<br><code>`</code> </p>
+<p>#scheme: Gemini</p>
 <h3 id="设置Menu"><a href="#设置Menu" class="headerlink" title="设置Menu"></a>设置Menu</h3><p>默认只有两个首页和归档.</p>
-<p>如果还要添加，编辑themes/next/_config.yml：<br>menu:<br>home: / || home //首页<br>about: /about/ || user //关于<br>tags: /tags/ || tags //标签<br>categories: /categories/ || th //分类<br>archives: /archives/ || archive //归档<br>schedule: /schedule/ || calendar //日程表<br>sitemap: /sitemap.xml || sitemap //站点地图</p>
-<ol>
+<p>如果还要添加，编辑<code>themes/next/_config.yml</code>：</p>
+<pre><code>menu:
+home: / || home //首页
+about: /about/ || user //关于
+tags: /tags/ || tags //标签
+categories: /categories/ || th //分类
+archives: /archives/ || archive //归档
+schedule: /schedule/ || calendar //日程表
+sitemap: /sitemap.xml || sitemap //站点地图
+
+</code></pre><ol>
 <li>创建“分类”页面<br><code>hexo new page categories</code></li>
 </ol>
 <p>给标签页面添加类型<br>我们在<code>source</code>文件夹中的tags文件夹下找到<code>index.md</code>文件，并在它的头部加上<code>type</code>属性。<br>title: 文章分类<br>date: 2017-05-27 13:47:40</p>
@@ -448,7 +460,7 @@
 <p>其中，头像的链接地址可以是：</p>
 <p>完整的互联网 URL，例如：<a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="noopener">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
 <p>站点内的地址，例如：url: /images/avatar.gif</p>
-<p>参考<br>设置侧边栏头像<br>next主题配置</p>
+<p>参考<br><a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%B4%E5%83%8F" target="_blank" rel="noopener">设置侧边栏头像</a><br><a href="https://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">next主题配置</a></p>
 
         </div>
         <!-- .entry-content -->
@@ -660,7 +672,7 @@ $(document).ready(function() {
   </section>
   <div id="mo-nav" class>
   <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg">
+    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6https://i.loli.net/2019/06/06/5cf8a9cc987ab19351.gif">
   </div>
   <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">Dearblog</p>
   <p style="text-align: center; word-spacing: 20px;">
