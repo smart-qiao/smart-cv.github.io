@@ -1,19 +1,16 @@
-window.onload = function() {
-    var OriginTitile = document.title;
-    var titleTime;
-    document.addEventListener('visibilitychange', function() {
-      if(document.hidden) {
-        $('[rel="icon"]').attr('href', "/failure.ico");
-        $('[rel="shortcut icon"]').attr('href', "/failure.ico");
-        document.title = '喔唷，崩溃啦！';
-        clearTimeout(titleTime);
-      } else {
-        $('[rel="icon"]').attr('href', "/favicon-32x32.ico");
-        $('[rel="shortcut icon"]').attr('href', "/favicon-32x32.ico");
-        document.title = '咦，页面又好了！';
-        titleTime = setTimeout(function() {
-          document.title = OriginTitile;
-        }, 2000);
-      }
-    });
-  }
+ var OriginTitle = document.title;
+ var titleTime;
+ document.addEventListener('visibilitychange', function () {
+     if (document.hidden) {
+         $('[rel="icon"]').attr('href', "/img/TEP.ico");
+         document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
+         clearTimeout(titleTime);
+     }
+     else {
+         $('[rel="icon"]').attr('href', "/favicon.ico");
+         document.title = '(ฅ>ω<*ฅ) 噫又好了~' + OriginTitle;
+         titleTime = setTimeout(function () {
+             document.title = OriginTitle;
+         }, 2000);
+     }
+ });
