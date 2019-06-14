@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">test生活 | 最爱悄悄呀</title>
+  <title itemprop="name">LaTex入门 | 最爱悄悄呀</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -377,30 +377,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      test生活</h1>
-      <p class="entry-census">
-        <span>
-          <a href="hojun.cn">
-            <img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="hojun.cn">hojun</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2019-6-6<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
-  </div>
-
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -408,8 +384,93 @@
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
+          <header class="entry-header">
+            <h1 class="entry-title">LaTex入门</h1>
+            <p class="entry-census">hojun&nbsp;·&nbsp;2019-6-14&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+
+            <hr>
+          </header>
+        
         <div class="entry-content">
-          <p>test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test<br>test test test test test test test </p>
+          <h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.<a href="http://www.ctex.org/HomePage" target="_blank" rel="noopener">安装</a></h2><h2 id="2-语法"><a href="#2-语法" class="headerlink" title="2.语法"></a>2.语法</h2><h4 id="打印-Hello-world"><a href="#打印-Hello-world" class="headerlink" title="打印 Hello world"></a>打印 <code>Hello world</code></h4><p>打开WinEdt，建立一个新文档，将以下内容复制进入文档中，保存，保存类型选择为UTF-8。</p>
+<pre><code>\documentclass{article} 
+\begin{document} 
+hello, world 
+\end{document}
+</code></pre><p>然后在WinEdt的工具栏中找到编译按钮（在垃圾桶和字母B中间），在下拉菜单中选择XeTeX，并点击编译。<br>如果顺利的话，我们就可以顺利生成出第一个pdf文件，点击工具栏中的放大镜按钮就可以快速打开生成的pdf文件。<br>加入中文，标题，作者和注释后的Hello World.</p>
+<pre><code>\documentclass{article}
+\usepackage{CJK}  %中文1
+\author{My Name}
+\title{The Title}
+\begin{document}
+\begin{CJK*}{GBK}{song}  %中文2
+\maketitle
+Hello World. \\  %回车
+这里输入中文
+\end{CJK*}  %中文3
+\end{document}
+</code></pre><h4 id="章节和段落"><a href="#章节和段落" class="headerlink" title="章节和段落"></a>章节和段落</h4><pre><code>\documentclass{article}
+\usepackage{CJK}
+\author{My Name}
+\title{The Title}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\maketitle
+\section{一级标题} 中国……
+    \subsection{二级标题} Beijing is the capital of China.
+    \subsubsection{三级标题}
+        \paragraph{Tian&#39;anmen Square}is in the center of Beijing
+        \subparagraph{Chairman Mao} is in the center of Tian&#39;anmen Square
+    \subsection{二级标题}
+        \paragraph{Sun Yat-sen University} is the best university in Guangzhou.
+\end{CJK*}
+\end{document}
+</code></pre><h4 id="加入目录"><a href="#加入目录" class="headerlink" title="加入目录"></a>加入目录</h4><p>将<code>\maketitle</code>改为<code>\tableofcontents</code>，即可。</p>
+<pre><code>\documentclass{article}
+\usepackage{CJK}
+\author{My Name}
+\title{The Title}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\tableofcontents
+\section{一级标题} 中国……
+    \subsection{二级标题} Beijing is the capital of China.
+    \subsubsection{三级标题}
+        \paragraph{Tian&#39;anmen Square}is in the center of Beijing
+        \subparagraph{Chairman Mao} is in the center of Tian&#39;anmen Square
+    \subsection{二级标题}
+        \paragraph{Sun Yat-sen University} is the best university in Guangzhou.
+\end{CJK*}
+\end{document}
+</code></pre><h4 id="加入公式"><a href="#加入公式" class="headerlink" title="加入公式"></a>加入公式</h4><pre><code>\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+The Newton&#39;s second law is F=ma.
+
+The Newton&#39;s second law is $F=ma$. 
+
+The Newton&#39;s second law is  $$F=ma$$
+
+The Newton&#39;s second law is  \[F=ma\]
+
+Greek Letters $\eta$ and $\mu$
+
+Fraction $\frac{a}{b}$
+
+Power $a^b$
+
+Subscript $a_b$
+
+Derivate $\frac{\partial y}{\partial t} $
+
+Vector $\vec{n}$
+
+Bold $\mathbf{n}$
+
+To time differential $\dot{F}$
+\end{document}
+</code></pre><p>*<a href="https://liam.page/2014/09/08/latex-introduction/" target="_blank" rel="noopener">一份其实很短的 LaTeX 入门文档</a> </p>
 
         </div>
         <!-- .entry-content -->
@@ -437,36 +498,19 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/06/06/test资源/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                test资源</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2019/06/05/使用hexo+github快速搭建个人博客/" rel="next">
+            <a href="/2019/06/10/内存分析/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                使用hexo+github快速搭建个人博客</h3>
+                llllllllllll</h3>
                 <hr>
               </div>
             </a>
