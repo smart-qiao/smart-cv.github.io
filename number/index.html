@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        
+    </style>
+</head>
+<body>
+ <canvas width="1366" height="768" style="border: 1px solid #000;">浏览器兼容</canvas>
+ 
+ <script>
+     var mcan = document.querySelector("canvas");
+      var ctx = mcan.getContext("2d");
+ //    准备工作
+      var cw = mcan.width;
+      var ch = mcan.height;
+      var content = "1066994334smart";
+      var fontSize = 16;
+      ctx.font = fontSize+"px '微软雅黑'";
+ //    一层有显示多少，当前canvas的宽度/文字的宽度
+     var countValue =[];
+     var count = cw/fontSize;
+     for(var i = 0; i<count;i++){
+         countValue[i] = 0;
+     }
+     //定义行数
+     var  row = 0;
+ 
+     function  draw() {
+         ctx.beginPath();
+         ctx.fillStyle ="rgba(0,0,0,0.09)";
+         ctx.fillRect(0,0,cw,ch);
+         ctx.beginPath();
+ 
+         //    开始绘制
+         for(var a = 0;a<count;a++){
+             ctx.textBaseline = "top";
+             ctx.fillStyle = "#f00";
+             //获取随机值
+             var ranFloat = Math.random()*content.length;//小数
+             var ranValue = content[Math.floor(ranFloat)];
+ 
+             ctx.fillText(ranValue,a*fontSize,fontSize*countValue[a]);
+             countValue[a]++;
+ 
+             if(fontSize*countValue[a]>ch&&Math.random()>0.9){
+                 console.log(countValue[a] +"   ");
+                 countValue[a]=0;
+             }
+         }
+     }
+ 
+ //   定时器
+     var time = setInterval(draw,50);
+ 
+ </script>
+</body>
+</html>
+ 
