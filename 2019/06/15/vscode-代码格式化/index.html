@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">树莓派连接wifi | 最爱悄悄呀</title>
+  <title itemprop="name">vscode 代码格式化 | 最爱悄悄呀</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -385,35 +385,24 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">树莓派连接wifi</h1>
-            <p class="entry-census">hojun&nbsp;·&nbsp;2018-6-14&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+            <h1 class="entry-title">vscode 代码格式化</h1>
+            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-15&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <p>新建文件，文件名为<code>wpa_supplicant.conf</code></p>
-<p>写入</p>
-<pre><code>country=CN
-
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-
-update_config=1
-
-
-
-network={
-
-ssid=&quot;&quot;
-
-psk=&quot;&quot;
-
-key_mgmt=WPA-PSK
-
-priority=1
-
-}
-</code></pre><p>引号内容SSID 是你的无线名称  PSK是你的无线密码</p>
+          <ol>
+<li>vs code格式化代码的快捷键如下：<a href="https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode" target="_blank" rel="noopener">（来源于这里）</a></li>
+</ol>
+<p>On Windows Shift + Alt + F<br>On Mac Shift + Option + F<br>On Ubuntu Ctrl + Shift + I<br>但是自带的格式化并不能满足我的需求，这个时候，不得不说插件大法好。  </p>
+<ol start="2">
+<li>HTML格式化代码缩进</li>
+</ol>
+<p>需要插件：Vetur</p>
+<p>Vetur是一个功能非常强大的插件，为 vs code 编写Vue代码提供了强大的支持，也支持大多数主流的前端开发脚本。具体可以看这里-&gt;<a href="https://vuejs.github.io/vetur/" target="_blank" rel="noopener">Vetur文档</a></p>
+<p>为了让HTML代码可以格式化缩进，添加如下一条：</p>
+<p>“vetur.format.defaultFormatter.html”: “prettier”<br>然后用格式化代码的快捷键就可以了</p>
 
         </div>
         <!-- .entry-content -->
@@ -441,23 +430,23 @@ priority=1
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+        
           
-            <div class="post-nepre full previous">
+            <div class="post-nepre full next">
           
-            <a href="/2018/12/12/Hexo-Theme-Sakura/" rel="prev">
+            <a href="/2019/06/15/hexo渲染自定义html/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
               <span class="label">
-              Previous Post</span>
+              Next Post</span>
               <div class="info">
                 <h3>
-                Hexo-Theme-Sakura</h3>
+                hexo渲染自定义html</h3>
                 <hr>
               </div>
             </a>
           </div>
-        
         
       </section>
       
@@ -477,11 +466,11 @@ priority=1
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="hojun.cn" itemprop="url" rel="author">hojun</a>
+            <a href="hojun.cn" itemprop="url" rel="author">dearzhe</a>
             </h3>
           </div>
         </div>
