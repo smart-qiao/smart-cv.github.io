@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-15T02:03:56.437Z</updated>
+  <updated>2019-06-18T03:20:48.270Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,108 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vscode右键添加菜单</title>
+    <link href="/2019/06/18/vscode%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/"/>
+    <id>/2019/06/18/vscode右键添加菜单/</id>
+    <published>2019-06-18T03:16:46.000Z</published>
+    <updated>2019-06-18T03:20:48.270Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;新建 1.reg&lt;br&gt;    键入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@=&amp;quot;Open with
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html代码重构为微信小程序</title>
+    <link href="/2019/06/17/html%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84%E4%B8%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>/2019/06/17/html代码重构为微信小程序/</id>
+    <published>2019-06-17T12:21:46.000Z</published>
+    <updated>2019-06-17T12:36:40.915Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://github.com/dearzhe/douyinlovehtml&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href&gt;小程序地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="小程序" scheme="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python各种模块下载地址</title>
+    <link href="/2019/06/17/python%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9D%97%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
+    <id>/2019/06/17/python各种模块下载地址/</id>
+    <published>2019-06-17T06:20:48.000Z</published>
+    <updated>2019-06-17T06:21:32.042Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>词云</title>
+    <link href="/2019/06/17/%E8%AF%8D%E4%BA%91/"/>
+    <id>/2019/06/17/词云/</id>
+    <published>2019-06-17T06:10:00.000Z</published>
+    <updated>2019-06-17T08:16:32.503Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;词云安装&quot;&gt;&lt;a href=&quot;#词云安装&quot; class=&quot;headerlink&quot; title=&quot;词云安装&quot;&gt;&lt;/a&gt;词云安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;pip install numpy matplotlib pillow wordcloud imageio
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>vscode 代码格式化</title>

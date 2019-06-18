@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">vscode 代码格式化 | 最爱悄悄呀</title>
+  <title itemprop="name">html代码重构为微信小程序 | 最爱悄悄呀</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -385,24 +385,71 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">vscode 代码格式化</h1>
-            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-15&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+            <h1 class="entry-title">html代码重构为微信小程序</h1>
+            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-17&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <ol>
-<li>vs code格式化代码的快捷键如下：<a href="https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode" target="_blank" rel="noopener">（来源于这里）</a></li>
-</ol>
-<p>On Windows Shift + Alt + F<br>On Mac Shift + Option + F<br>On Ubuntu Ctrl + Shift + I<br>但是自带的格式化并不能满足我的需求，这个时候，不得不说插件大法好。  </p>
-<ol start="2">
-<li>HTML格式化代码缩进</li>
-</ol>
-<p>需要插件：Vetur</p>
-<p>Vetur是一个功能非常强大的插件，为 vs code 编写Vue代码提供了强大的支持，也支持大多数主流的前端开发脚本。具体可以看这里-&gt;<a href="https://vuejs.github.io/vetur/" target="_blank" rel="noopener">Vetur文档</a></p>
-<p>为了让HTML代码可以格式化缩进，添加如下一条：</p>
-<p>“vetur.format.defaultFormatter.html”: “prettier”<br>然后用格式化代码的快捷键就可以了</p>
+          <p><a href="https://github.com/dearzhe/douyinlovehtml" target="_blank" rel="noopener">原项目地址</a></p>
+<p><a href>小程序地址</a></p>
+<h2 id="微信小程序-详解弹框wx-showToast、wx-showModal、wx-showActionSheet，modal控件解释及input输入框值的获取"><a href="#微信小程序-详解弹框wx-showToast、wx-showModal、wx-showActionSheet，modal控件解释及input输入框值的获取" class="headerlink" title="微信小程序 详解弹框wx.showToast、wx.showModal、wx.showActionSheet，modal控件解释及input输入框值的获取"></a><a href="https://blog.csdn.net/yingtian648/article/details/80004334" target="_blank" rel="noopener">微信小程序 详解弹框wx.showToast、wx.showModal、wx.showActionSheet，modal控件解释及input输入框值的获取</a></h2><p>一、wx.showToast</p>
+<pre><code>wx.showToast({
+     title: &#39;失败&#39;,//提示文字
+     duration:2000,//显示时长
+     mask:true,//是否显示透明蒙层，防止触摸穿透，默认：false  
+     icon:&#39;success&#39;, //图标，支持&quot;success&quot;、&quot;loading&quot;  
+     success:function(){ },//接口调用成功
+     fail: function () { },  //接口调用失败的回调函数  
+     complete: function () { } //接口调用结束的回调函数  
+})
+</code></pre><p>二、wx.showModal</p>
+<pre><code>wx.showModal({
+     title: &#39;删除图片&#39;,
+     content: &#39;确定要删除该图片？&#39;,
+     showCancel: true,//是否显示取消按钮
+     cancelText:&quot;否&quot;,//默认是“取消”
+     cancelColor:&#39;skyblue&#39;,//取消文字的颜色
+     confirmText:&quot;是&quot;,//默认是“确定”
+     confirmColor: &#39;skyblue&#39;,//确定文字的颜色
+     success: function (res) {
+        if (res.cancel) {
+           //点击取消,默认隐藏弹框
+        } else {
+           //点击确定
+           temp.splice(index, 1),
+           that.setData({
+              tempFilePaths: temp,
+           })
+        }
+     },
+     fail: function (res) { },//接口调用失败的回调函数
+     complete: function (res) { },//接口调用结束的回调函数（调用成功、失败都会执行）
+  })
+</code></pre><p>三、wx.showActionSheet</p>
+<pre><code>wx.showActionSheet({
+     itemList: [&#39;列1&#39;,&#39;列2&#39;,&#39;列3&#39;],//显示的列表项
+     success: function (res) {//res.tapIndex点击的列表项
+        console.log(&quot;点击了列表项：&quot; + that[res.tapIndex])
+     },
+     fail: function (res) { },
+     complete:function(res){ }
+  })
+</code></pre><h2 id="类似于alert"><a href="#类似于alert" class="headerlink" title="类似于alert"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showModal.html" target="_blank" rel="noopener">类似于<code>alert</code></a></h2><h2 id="微信小程序-循环执行-设定固定时间间隔"><a href="#微信小程序-循环执行-设定固定时间间隔" class="headerlink" title="微信小程序 循环执行 设定固定时间间隔"></a>微信小程序 循环执行 设定固定时间间隔</h2><pre><code>setInterval(function () {
+//循环执行代码
+}, 1000) //循环时间 这里是1秒  
+满足条件 结束循环
+
+
+var a = setInterval(function () { 
+    //循环执行代码 
+    if(结束条件)
+    { 
+        clearInterval(a) 
+    } 
+}, 1000) //循环时间 这里是1秒
+</code></pre><p><a href="https://blog.csdn.net/ufo00001/article/details/73251142" target="_blank" rel="noopener">微信小程序 循环执行 设定固定时间间隔</a></p>
 
         </div>
         <!-- .entry-content -->
@@ -433,7 +480,7 @@
           
             <div class="post-nepre half previous">
           
-            <a href="/2019/06/17/词云/" rel="prev">
+            <a href="/2019/06/18/vscode右键添加菜单/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
@@ -441,7 +488,7 @@
               Previous Post</span>
               <div class="info">
                 <h3>
-                词云</h3>
+                vscode右键添加菜单</h3>
                 <hr>
               </div>
             </a>
@@ -451,7 +498,7 @@
           
             <div class="post-nepre half next">
           
-            <a href="/2019/06/15/hexo渲染自定义html/" rel="next">
+            <a href="/2019/06/17/python各种模块下载地址/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
@@ -459,7 +506,7 @@
               Next Post</span>
               <div class="info">
                 <h3>
-                hexo渲染自定义html</h3>
+                python各种模块下载地址</h3>
                 <hr>
               </div>
             </a>
@@ -483,7 +530,7 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
+          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
@@ -492,7 +539,7 @@
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
+        <p><i class="iconfont icon-write"></i>一个有趣的人</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
