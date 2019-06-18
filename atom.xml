@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-17T12:36:40.915Z</updated>
+  <updated>2019-06-18T13:01:45.407Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2019/06/17/html%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84%E4%B8%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     <id>/2019/06/17/html代码重构为微信小程序/</id>
     <published>2019-06-17T12:21:46.000Z</published>
-    <updated>2019-06-17T12:36:40.915Z</updated>
+    <updated>2019-06-18T13:01:45.407Z</updated>
     
     <summary type="html">
     
@@ -30,8 +30,7 @@
         
         
           &lt;p&gt;&lt;a href=&quot;https://github.com/dearzhe/douyinlovehtml&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原项目地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href&gt;小程序地址&lt;/a&gt;&lt;/p&gt;
-&lt;h2
+&lt;p&gt;&lt;a
         
       
     
@@ -49,7 +48,7 @@
     <link href="/2019/06/17/python%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9D%97%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
     <id>/2019/06/17/python各种模块下载地址/</id>
     <published>2019-06-17T06:20:48.000Z</published>
-    <updated>2019-06-17T06:21:32.042Z</updated>
+    <updated>2019-06-18T13:03:27.537Z</updated>
     
     <summary type="html">
     
@@ -62,6 +61,8 @@
       
     
     </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
   </entry>
@@ -87,59 +88,6 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>vscode 代码格式化</title>
-    <link href="/2019/06/15/vscode-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
-    <id>/2019/06/15/vscode-代码格式化/</id>
-    <published>2019-06-15T01:58:42.000Z</published>
-    <updated>2019-06-15T02:03:56.437Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;vs code格式化代码的快捷键如下：&lt;a href=&quot;https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="vscode" scheme="/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo渲染自定义html</title>
-    <link href="/2019/06/15/hexo%E6%B8%B2%E6%9F%93%E8%87%AA%E5%AE%9A%E4%B9%89html/"/>
-    <id>/2019/06/15/hexo渲染自定义html/</id>
-    <published>2019-06-15T01:23:20.000Z</published>
-    <updated>2019-06-15T02:04:14.168Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Hexo是静态页博客生成利器，同很多博主一样，&lt;a href=&quot;https://refined-x.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;前端路上&lt;/a&gt;原创技术博客也是使用Hexo生成并托管在Github
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="/tags/hexo/"/>
     
   </entry>
   
@@ -353,10 +301,10 @@
   
   <entry>
     <title>简单实用的js小技巧</title>
-    <link href="/2019/05/25/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>/2019/05/25/简单实用的js小技巧/</id>
-    <published>2019-05-25T05:46:24.000Z</published>
-    <updated>2019-06-14T19:51:05.264Z</updated>
+    <link href="/2019/05/17/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>/2019/05/17/简单实用的js小技巧/</id>
+    <published>2019-05-17T05:46:24.000Z</published>
+    <updated>2019-06-18T13:06:06.305Z</updated>
     
     <summary type="html">
     
@@ -422,6 +370,59 @@
       <category term="web" scheme="/tags/web/"/>
     
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode 代码格式化</title>
+    <link href="/2018/09/15/vscode-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    <id>/2018/09/15/vscode-代码格式化/</id>
+    <published>2018-09-15T01:58:42.000Z</published>
+    <updated>2019-06-18T13:06:10.879Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;vs code格式化代码的快捷键如下：&lt;a href=&quot;https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="vscode" scheme="/tags/vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo渲染自定义html</title>
+    <link href="/2018/06/15/hexo%E6%B8%B2%E6%9F%93%E8%87%AA%E5%AE%9A%E4%B9%89html/"/>
+    <id>/2018/06/15/hexo渲染自定义html/</id>
+    <published>2018-06-15T01:23:20.000Z</published>
+    <updated>2019-06-18T13:01:56.662Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Hexo是静态页博客生成利器，同很多博主一样，&lt;a href=&quot;https://refined-x.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;前端路上&lt;/a&gt;原创技术博客也是使用Hexo生成并托管在Github
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="/tags/hexo/"/>
     
   </entry>
   
