@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">html代码重构为微信小程序 | 最爱悄悄呀</title>
+  <title itemprop="name">树莓派之初次体验 | 最爱悄悄呀</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -385,71 +385,16 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">html代码重构为微信小程序</h1>
-            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-17&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+            <h1 class="entry-title">树莓派之初次体验</h1>
+            <p class="entry-census">hojun&nbsp;·&nbsp;2017-6-9&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <p><a href="https://github.com/dearzhe/douyinlovehtml" target="_blank" rel="noopener">原项目地址</a></p>
-<p><a href>小程序地址</a></p>
-<h2 id="微信小程序-详解弹框wx-showToast、wx-showModal、wx-showActionSheet，modal控件解释及input输入框值的获取"><a href="#微信小程序-详解弹框wx-showToast、wx-showModal、wx-showActionSheet，modal控件解释及input输入框值的获取" class="headerlink" title="微信小程序 详解弹框wx.showToast、wx.showModal、wx.showActionSheet，modal控件解释及input输入框值的获取"></a><a href="https://blog.csdn.net/yingtian648/article/details/80004334" target="_blank" rel="noopener">微信小程序 详解弹框wx.showToast、wx.showModal、wx.showActionSheet，modal控件解释及input输入框值的获取</a></h2><p>一、wx.showToast</p>
-<pre><code>wx.showToast({
-     title: &#39;失败&#39;,//提示文字
-     duration:2000,//显示时长
-     mask:true,//是否显示透明蒙层，防止触摸穿透，默认：false  
-     icon:&#39;success&#39;, //图标，支持&quot;success&quot;、&quot;loading&quot;  
-     success:function(){ },//接口调用成功
-     fail: function () { },  //接口调用失败的回调函数  
-     complete: function () { } //接口调用结束的回调函数  
-})
-</code></pre><p>二、wx.showModal</p>
-<pre><code>wx.showModal({
-     title: &#39;删除图片&#39;,
-     content: &#39;确定要删除该图片？&#39;,
-     showCancel: true,//是否显示取消按钮
-     cancelText:&quot;否&quot;,//默认是“取消”
-     cancelColor:&#39;skyblue&#39;,//取消文字的颜色
-     confirmText:&quot;是&quot;,//默认是“确定”
-     confirmColor: &#39;skyblue&#39;,//确定文字的颜色
-     success: function (res) {
-        if (res.cancel) {
-           //点击取消,默认隐藏弹框
-        } else {
-           //点击确定
-           temp.splice(index, 1),
-           that.setData({
-              tempFilePaths: temp,
-           })
-        }
-     },
-     fail: function (res) { },//接口调用失败的回调函数
-     complete: function (res) { },//接口调用结束的回调函数（调用成功、失败都会执行）
-  })
-</code></pre><p>三、wx.showActionSheet</p>
-<pre><code>wx.showActionSheet({
-     itemList: [&#39;列1&#39;,&#39;列2&#39;,&#39;列3&#39;],//显示的列表项
-     success: function (res) {//res.tapIndex点击的列表项
-        console.log(&quot;点击了列表项：&quot; + that[res.tapIndex])
-     },
-     fail: function (res) { },
-     complete:function(res){ }
-  })
-</code></pre><h2 id="类似于alert"><a href="#类似于alert" class="headerlink" title="类似于alert"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showModal.html" target="_blank" rel="noopener">类似于<code>alert</code></a></h2><h2 id="微信小程序-循环执行-设定固定时间间隔"><a href="#微信小程序-循环执行-设定固定时间间隔" class="headerlink" title="微信小程序 循环执行 设定固定时间间隔"></a>微信小程序 循环执行 设定固定时间间隔</h2><pre><code>setInterval(function () {
-//循环执行代码
-}, 1000) //循环时间 这里是1秒  
-满足条件 结束循环
-
-
-var a = setInterval(function () { 
-    //循环执行代码 
-    if(结束条件)
-    { 
-        clearInterval(a) 
-    } 
-}, 1000) //循环时间 这里是1秒
-</code></pre><p><a href="https://blog.csdn.net/ufo00001/article/details/73251142" target="_blank" rel="noopener">微信小程序 循环执行 设定固定时间间隔</a></p>
+          <p>有关树莓派系列的玩法很早就想写了，奈何手头事务繁忙，一直拖到这几天，<br>接下来，我会将自己在玩树莓派一路上总结的玩法和遇到的坑写下来，诸君共勉·<br>··了·</p>
+<p>安装系统</p>
+<p>1.首先呢，当然是去官网下载系统<br><a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">https://www.raspberrypi.org/</a><br>2.下载 win32disk </p>
 
         </div>
         <!-- .entry-content -->
@@ -477,23 +422,23 @@ var a = setInterval(function () {
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-        
           
-            <div class="post-nepre full next">
+            <div class="post-nepre full previous">
           
-            <a href="/2019/06/17/python各种模块下载地址/" rel="next">
+            <a href="/2017/06/14/树莓派连接wifi/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
               <span class="label">
-              Next Post</span>
+              Previous Post</span>
               <div class="info">
                 <h3>
-                python各种模块下载地址</h3>
+                远程到树莓派</h3>
                 <hr>
               </div>
             </a>
           </div>
+        
         
       </section>
       
@@ -513,16 +458,16 @@ var a = setInterval(function () {
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
+          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="hojun" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="hojun.cn" itemprop="url" rel="author">dearzhe</a>
+            <a href="hojun.cn" itemprop="url" rel="author">hojun</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>一个有趣的人</p>
+        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
