@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-18T13:01:45.407Z</updated>
+  <updated>2019-06-19T00:31:59.844Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>域名绑定github page</title>
+    <link href="/2019/06/19/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9Agithub-page/"/>
+    <id>/2019/06/19/域名绑定github-page/</id>
+    <published>2019-06-19T00:27:44.000Z</published>
+    <updated>2019-06-19T00:31:59.844Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ping 
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vscode好用的插件</title>
+    <link href="/2019/06/18/vscode%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
+    <id>/2019/06/18/vscode好用的插件/</id>
+    <published>2019-06-18T13:29:15.000Z</published>
+    <updated>2019-06-19T00:42:55.986Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1、Custom CSS and JS Loader&lt;/p&gt;
+&lt;p&gt;用于自定义CSS和JS&lt;/p&gt;
+&lt;p&gt;2、SynthWare 84&lt;br&gt;关键字高亮主题、霓虹主题&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>html代码重构为微信小程序</title>
@@ -96,7 +146,7 @@
     <link href="/2019/06/14/LaTex%E5%85%A5%E9%97%A8/"/>
     <id>/2019/06/14/LaTex入门/</id>
     <published>2019-06-14T08:48:35.000Z</published>
-    <updated>2019-06-14T09:04:42.866Z</updated>
+    <updated>2019-06-18T13:18:08.954Z</updated>
     
     <summary type="html">
     
@@ -444,34 +494,6 @@
 &lt;pre&gt;&lt;code&gt;country=CN
 
 ctrl_interface=DIR=/var/run/wpa_supplicant
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派之初次体验</title>
-    <link href="/2017/06/09/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8B%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/"/>
-    <id>/2017/06/09/树莓派之初次体验/</id>
-    <published>2017-06-09T11:18:42.000Z</published>
-    <updated>2019-06-18T12:52:48.838Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;有关树莓派系列的玩法很早就想写了，奈何手头事务繁忙，一直拖到这几天，&lt;br&gt;接下来，我会将自己在玩树莓派一路上总结的玩法和遇到的坑写下来，诸君共勉·&lt;br&gt;··了·&lt;/p&gt;
-&lt;p&gt;安装系统&lt;/p&gt;
-&lt;p&gt;1.首先呢，当然是去官网下载系统&lt;br&gt;&lt;a
         
       
     

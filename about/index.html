@@ -395,7 +395,7 @@
   </p>
   <h4>
   与&nbsp;<ruby>
-  Mashiro&nbsp;<rp>
+  可爱的我&nbsp;<rp>
   （</rp>
   <rt>
   真（ま）白（しろ）</rt>
@@ -419,7 +419,7 @@ function bot_ui_ini() {
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 Mashiro"
+            content: "这里是 Dearzhe"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
@@ -458,11 +458,11 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "目前就读于陕西邮电职业技术学院"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
+                    content: "向往前端却误入JAVA，但后来喜欢上了Python"
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
@@ -470,21 +470,22 @@ function bot_ui_ini() {
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            content: "主攻 JAVA 语言和 Python，略懂 C，偶尔也折腾 HTML/CSS/JavaScript/PHP"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
                                 content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
+                                // content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
+                                    content: "喜欢硬件，希望有一天能够玩转树莓派"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
-                                            value: "why-mashiro"
+                                            text: "为什么叫Dearzhe呢？ 🤔",
+                                            value: "because I'm the cutest."
                                         }]
                                     }).then(function (a) {
                                         thirdpart()
