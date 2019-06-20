@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-19T00:31:59.844Z</updated>
+  <updated>2019-06-19T12:52:53.043Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vi常用命令</title>
+    <link href="/2019/06/19/vi%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>/2019/06/19/vi常用命令/</id>
+    <published>2019-06-19T12:52:53.000Z</published>
+    <updated>2019-06-19T12:52:53.043Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>域名绑定github page</title>
@@ -122,7 +138,7 @@
     <link href="/2019/06/17/%E8%AF%8D%E4%BA%91/"/>
     <id>/2019/06/17/词云/</id>
     <published>2019-06-17T06:10:00.000Z</published>
-    <updated>2019-06-17T08:16:32.503Z</updated>
+    <updated>2019-06-19T12:45:46.991Z</updated>
     
     <summary type="html">
     
@@ -138,6 +154,62 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>hexo渲染自定义html</title>
+    <link href="/2019/06/15/hexo%E6%B8%B2%E6%9F%93%E8%87%AA%E5%AE%9A%E4%B9%89html/"/>
+    <id>/2019/06/15/hexo渲染自定义html/</id>
+    <published>2019-06-15T01:23:20.000Z</published>
+    <updated>2019-06-19T12:46:28.808Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Hexo是静态页博客生成利器，同很多博主一样，&lt;a href=&quot;https://refined-x.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;前端路上&lt;/a&gt;原创技术博客也是使用Hexo生成并托管在Github
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>远程到树莓派</title>
+    <link href="/2019/06/14/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5wifi/"/>
+    <id>/2019/06/14/树莓派连接wifi/</id>
+    <published>2019-06-14T09:09:13.000Z</published>
+    <updated>2019-06-19T12:46:32.520Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.新建文件，文件名为&lt;code&gt;wpa_supplicant.conf&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;写入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;country=CN
+
+ctrl_interface=DIR=/var/run/wpa_supplicant
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
     
   </entry>
   
@@ -178,6 +250,34 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派之初次体验</title>
+    <link href="/2019/06/09/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8B%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/"/>
+    <id>/2019/06/09/树莓派之初次体验/</id>
+    <published>2019-06-09T11:18:42.000Z</published>
+    <updated>2019-06-19T12:46:31.299Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;有关树莓派系列的玩法很早就想写了，奈何手头事务繁忙，一直拖到这几天，&lt;br&gt;接下来，我会将自己在玩树莓派一路上总结的玩法和遇到的坑写下来，诸君共勉·&lt;br&gt;··了·&lt;/p&gt;
+&lt;p&gt;安装系统&lt;/p&gt;
+&lt;p&gt;1.首先呢，当然是去官网下载系统&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
     
   </entry>
   
@@ -398,111 +498,6 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-Theme-Sakura</title>
-    <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
-    <id>/2018/12/12/Hexo-Theme-Sakura/</id>
-    <published>2018-12-12T14:16:01.000Z</published>
-    <updated>2019-06-01T14:21:46.000Z</updated>
-    
-    <summary type="html">
-    
-      hexo-sakura主题使用教程
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="web" scheme="/tags/web/"/>
-    
-      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vscode 代码格式化</title>
-    <link href="/2018/09/15/vscode-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
-    <id>/2018/09/15/vscode-代码格式化/</id>
-    <published>2018-09-15T01:58:42.000Z</published>
-    <updated>2019-06-18T13:06:10.879Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;vs code格式化代码的快捷键如下：&lt;a href=&quot;https://stackoverflow.com/questions/29973357/how-do-you-format-code-in-visual-studio-code-vscode&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="vscode" scheme="/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo渲染自定义html</title>
-    <link href="/2018/06/15/hexo%E6%B8%B2%E6%9F%93%E8%87%AA%E5%AE%9A%E4%B9%89html/"/>
-    <id>/2018/06/15/hexo渲染自定义html/</id>
-    <published>2018-06-15T01:23:20.000Z</published>
-    <updated>2019-06-18T13:01:56.662Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Hexo是静态页博客生成利器，同很多博主一样，&lt;a href=&quot;https://refined-x.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;前端路上&lt;/a&gt;原创技术博客也是使用Hexo生成并托管在Github
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>远程到树莓派</title>
-    <link href="/2017/06/14/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5wifi/"/>
-    <id>/2017/06/14/树莓派连接wifi/</id>
-    <published>2017-06-14T09:09:13.000Z</published>
-    <updated>2019-06-18T12:53:12.853Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1.新建文件，文件名为&lt;code&gt;wpa_supplicant.conf&lt;/code&gt;  &lt;/p&gt;
-&lt;p&gt;写入&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;country=CN
-
-ctrl_interface=DIR=/var/run/wpa_supplicant
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
     
   </entry>
   
