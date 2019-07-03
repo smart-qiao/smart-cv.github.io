@@ -392,7 +392,203 @@
           </header>
         
         <div class="entry-content">
-          
+          <p>Linux vi中查找字符内容的方法</p>
+<p>使用vi编辑器编辑长文件时，常常是头昏眼花，也找不到需要更改的内容。</p>
+<p>这时，使用查找功能尤为重要。</p>
+<p>方法如下：</p>
+<p>1、命令模式下输入“/字符串”，例如“/Section 3”。</p>
+<p>2、如果查找下一个，按“n”即可。</p>
+<p>要自当前光标位置向上搜索，请使用以下命令：</p>
+<p>/pattern Enter</p>
+<p>其中，pattern表示要搜索的特定字符序列。</p>
+<p>要自当前光标位置向下搜索，请使用以下命令：</p>
+<p>?pattern Enter</p>
+<p>按下 Enter键后，vi 将搜索指定的pattern，并将光标定位在 pattern的第一个字符处。例如，要向上搜索 place一词，请键入：</p>
+<p>vi 查找替换大全</p>
+<p>vi/vim 中可以使用 :s 命令来替换字符串。以前只会使用一种格式来全文替换，今天发现该命令有很多种写法（vi 真是强大啊，还有很多需要学习），记录几种在此，方便以后查询。</p>
+<p>:s/vivian/sky/ 替换当前行第一个 vivian 为 sky</p>
+<p>:s/vivian/sky/g 替换当前行所有 vivian 为 sky</p>
+<p>:n,$s/vivian/sky/ 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky</p>
+<p>:n,$s/vivian/sky/g 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky</p>
+<p>n 为数字，若 n 为 .，表示从当前行开始到最后一行</p>
+<p>:%s/vivian/sky/（等同于 :g/vivian/s//sky/） 替换每一行的第一个 vivian 为 sky</p>
+<p>:%s/vivian/sky/g（等同于 :g/vivian/s//sky/g） 替换每一行中所有 vivian 为 sky</p>
+<p>可以使用 # 作为分隔符，此时中间出现的 / 不会作为分隔符</p>
+<p>:s#vivian/#sky/# 替换当前行第一个 vivian/ 为 sky/</p>
+<p>:%s+/oradata/apras/+/user01/apras1+ （使用+ 来 替换 / ）： /oradata/apras/替换成/user01/apras1/</p>
+<p>1.:s/vivian/sky/ 替换当前行第一个 vivian 为 sky</p>
+<p>:s/vivian/sky/g 替换当前行所有 vivian 为 sky</p>
+<ol start="2">
+<li>:n,$s/vivian/sky/ 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky</li>
+</ol>
+<p>:n,$s/vivian/sky/g 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky</p>
+<p>(n 为数字，若 n 为 .，表示从当前行开始到最后一行)</p>
+<ol start="3">
+<li>:%s/vivian/sky/（等同于 :g/vivian/s//sky/） 替换每一行的第一个 vivian 为 sky</li>
+</ol>
+<p>:%s/vivian/sky/g（等同于 :g/vivian/s//sky/g） 替换每一行中所有 vivian 为 sky</p>
+<ol start="4">
+<li>可以使用 # 作为分隔符，此时中间出现的 / 不会作为分隔符</li>
+</ol>
+<p>:s#vivian/#sky/# 替换当前行第一个 vivian/ 为 sky/</p>
+<ol start="5">
+<li>删除文本中的^M</li>
+</ol>
+<p>问题描述：对于换行,window下用回车换行(0A0D)来表示，Linux下是回车(0A)来表示。这样，将window上的文件拷到Unix上用时，总会有个^M.请写个用在unix下的过滤windows文件的换行符(0D)的shell或c程序。</p>
+<p>· 使用命令：cat filename1 | tr -d “^V^M” &gt; newfile；</p>
+<p>· 使用命令：sed -e “s/^V^M//” filename &gt; outputfilename。需要注意的是在1、2两种方法中，^V和^M指的是Ctrl+V和Ctrl+M。你必须要手工进行输入，而不是粘贴。</p>
+<p>· 在vi中处理：首先使用vi打开文件，然后按ESC键，接着输入命令：%s/^V^M//。</p>
+<p>· :%s/^M$//g</p>
+<p>如果上述方法无用，则正确的解决办法是：</p>
+<p>· tr -d “r” &lt; src &gt;dest</p>
+<p>· tr -d “15” dest</p>
+<p>· strings A&gt;B</p>
+<ol start="6">
+<li>其它</li>
+</ol>
+<p>利用 :s 命令可以实现字符串的替换。具体的用法包括：</p>
+<p>:s/str1/str2/ 用字符串 str2 替换行中首次出现的字符串 str1</p>
+<p>:s/str1/str2/g 用字符串 str2 替换行中所有出现的字符串 str1</p>
+<p>:.,$ s/str1/str2/g 用字符串 str2 替换正文当前行到末尾所有出现的字符串 str1</p>
+<p>:1,$ s/str1/str2/g 用字符串 str2 替换正文中所有出现的字符串 str1</p>
+<p>:g/str1/s//str2/g 功能同上</p>
+<p>从上述替换命令可以看到：g 放在命令末尾，表示对搜索字符串的每次出现进行替换；不加 g，表示只对搜索</p>
+<p>字符串的首次出现进行替换；g 放在命令开头，表示对正文中所有包含搜索字符串的行进行替换操作。</p>
+<p>查找到结果后，如何退出查找呢？输入:noh命令。</p>
+<p>vi命令示例大全<br>命令历史<br>以:和/开头的命令都有历史纪录，可以首先键入:或/然后按上下箭头来选择某个历史命令。</p>
+<p>进入vi<br>vi filename # 打开或新建文件，并将光标置于第一行首<br>vi +n filename # 打开文件，并将光标置于第n行首<br>vi + filename # 打开文件，并将光标置于最后一行首<br>vi +/pattern filename # 打开文件，并将光标置于第一个与pattern匹配的串处<br>vi -r filename # 在上次正用vi编辑时发生系统崩溃，恢复filename<br>vi filename….filename # 打开多个文件，依次进行编辑</p>
+<p>文件命令<br>打开单个文件<br>vim file</p>
+<p>同时打开多个文件<br>vim file1 file2 file3 …</p>
+<p>在vim窗口中打开一个新文件<br>:open file</p>
+<p>在新窗口中打开文件<br>:split file</p>
+<p>切换到下一个文件<br>:bn</p>
+<p>切换到上一个文件<br>:bp</p>
+<p>查看当前打开的文件列表，当前正在编辑的文件会用[]括起来。<br>:args</p>
+<p>打开远程文件，比如ftp或者share folder<br>:e <a href="ftp://192.168.10.76/abc.txt" target="_blank" rel="noopener">ftp://192.168.10.76/abc.txt</a><br>:e \qadrive\test\1.txt</p>
+<p>vim的模式<br>正常模式（按Esc或Ctrl+[进入） 左下角显示文件名或为空</p>
+<p>插入模式（按i键进入） 左下角显示–INSERT–</p>
+<p>可视模式（不知道如何进入） 左下角显示–VISUAL–</p>
+<p>保存退出<br>w # 保存当前文件<br>w /tmp1 # 另存为/tmp1<br>20,59w /tmp1 # 仅将20-59行之间的内存另存为/tmp1<br>x 或 wq # 保存退出<br>q # 退出vi<br>q! # 退出不保存<br>!command # 执行shell命令command<br>n1,n2 w !command # 将文件中n1行至n2行的内容作为command的输入并执行之，若不指定n1，n2，则表示将整个文件内容作为command的输入<br>r !command # 将命令command的输出结果放到当前行<br>w !sudo tee % # 保存没权限时，可获取权限再保存</p>
+<p>导航<br>h # 光标左移一个字符<br>l # 光标右移一个字符<br>space # 光标右移一个字符<br>Backspace # 光标左移一个字符<br>k 或 Ctrl+p # 光标上移一行<br>j 或 Ctrl+n # 光标下移一行<br>Enter # 光标下移一行<br>w 或 W # 光标右移一个字至字首<br>b 或 B # 光标左移一个字至字首<br>e 或 E # 光标右移一个字至字尾<br>) # 光标移至句尾<br>( # 光标移至句首<br>} # 光标移至段落开头<br>{ # 光标移至段落结尾<br>nG # 光标移至第n行首<br>n+ # 光标下移n行<br>n- # 光标上移n行<br>n$ # 光标移至第n行尾<br>H # 光标移至屏幕顶行<br>M # 光标移至屏幕中间行<br>L # 光标移至屏幕最后行<br>0 # （注意是数字零）光标移至当前行首<br>$ # 光标移至当前行尾<br>% 括号匹配</p>
+<p>屏幕翻滚<br>Ctrl+u # 向文件首翻半屏<br>Ctrl+d # 向文件尾翻半屏<br>Ctrl+f # 向文件尾翻一屏<br>Ctrl＋b # 向文件首翻一屏<br>nz # 将第n行滚至屏幕顶部，不指定n时将当前行滚至屏幕顶部</p>
+<p>插入<br>i # 在光标前<br>I # 在当前行首<br>a # 光标后<br>A # 在当前行尾<br>o # 在当前行之下新开一行<br>O # 在当前行之上新开一行<br>r # 替换当前字符<br>R # 替换当前字符及其后的字符，直至按ESC键<br>s # 从当前光标位置处开始，以输入的文本替代指定数目的字符<br>S # 删除指定数目的行，并以所输入文本代替之<br>ncw 或 nCW # 修改指定数目的字<br>nCC # 修改指定数目的行</p>
+<p>删除<br>ndw 或 ndW # 删除光标处开始及其后的n-1个字<br>do # 删至行首<br>d$ # 删至行尾<br>ndd # 删除当前行及其后n-1行<br>x 或 X # 删除一个字符，x删除光标后的，而X删除光标前的<br>Ctrl+u # 删除输入方式下所输入的文本<br>n1,n2 d # 将n1行到n2行之间的内容删除<br>%d # 删除全部内容<br>1,$d # 删除全部内容</p>
+<p>复制粘贴、剪切、移动<br>yy # 复制当前行<br>nyy # 复制当前行开始的n行<br>先按 v 然后方向键选择区域，按 y 复制选中行<br>dd # 剪切当前行<br>p（小） # 在当前光标处下面粘贴内容。<br>P（大） # 在当前光标处上面粘贴内容<br>n1,n2 co n3 # 将n1行到n2行之间的内容拷贝到第n3行下<br>n1,n2 m n3 # 将n1行到n2行之间的内容移至到第n3行下</p>
+<p>搜索（查找）<br>/abc # 从光标开始处向文件尾搜索abc<br>?abc # 从光标开始处向文件首搜索abc<br>/\/abc # 从光标开始处向文件尾搜索/abc，其中/是转义<br>n # 在同一方向重复上一次搜索命令<br>N # 在反方向上重复上一次搜索命令</p>
+<p>替换<br>s/vivian/sky/ # 替换当前行第一个 vivian 为 sky<br>s/vivian/sky/g # 替换当前行所有 vivian 为 sky<br>n,$s/vivian/sky/ # 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky<br>n,$s/vivian/sky/g # 替换第 n 行开始到最后一行中每一行所有 vivian 为sky<br>%s/vivian/sky/g # （等同于 g/vivian/s//sky/） 替换每一行的每一个 vivian 为 sky<br>s#vivian/#sky/# # 替换当前行第一个 vivian/ 为 sky/（可以使用 #或+作为分隔符，此时中间出现的 / 不会作为分隔符）<br>s/p1/p2/g # 将当前行中所有p1均用p2替代<br>n1,n2s/p1/p2/g # 将第n1至n2行中所有p1均用p2替代<br>g/p1/s//p2/g # 将文件中所有p1均用p2替换</p>
+<p>寄存器<br>“?nyy # 将当前行及其下n行的内容保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?nyw # 将当前行及其下n个字保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?nyl # 将当前行及其下n个字符保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?p # 取出寄存器？中的内容并将其放到光标位置处。这里？可以是一个字母，也可以是一个数字<br>ndd # 将当前行及其下共n行文本删除，并将所删内容放到1号删除寄存器中。</p>
+<p>选项设置<br>set number # 显示行号<br>set number! # 不显示行号，其它选项同理加！号<br>set all # 列出所有选项设置情况<br>set term # 设置终端类型<br>set ignorance # 在搜索中忽略大小写<br>set list # 显示制表位(Ctrl+I)和行尾标志（$)<br>set report # 显示由面向行的命令修改过的数目<br>set terse # 显示简短的警告信息<br>set warn # 在转到别的文件时若没保存当前文件则显示NO write信息<br>set nomagic # 允许在搜索模式中，使用前面不带“”的特殊字符<br>set nowrapscan # 禁止vi在搜索到达文件两端时，又从另一端开始<br>set mesg # 允许vi显示其他用户用write写到自己终端上的信息</p>
+<p>插入命令<br>i 在当前位置生前插入</p>
+<p>I 在当前行首插入</p>
+<p>a 在当前位置后插入</p>
+<p>A 在当前行尾插入</p>
+<p>o 在当前行之后插入一行</p>
+<p>O 在当前行之前插入一行</p>
+<p>查找命令<br>/text　　查找text，按n健查找下一个，按N健查找前一个。</p>
+<p>?text　　查找text，反向查找，按n健查找下一个，按N健查找前一个。</p>
+<p>vim中有一些特殊字符在查找时需要转义　　.*[]^%/?~$</p>
+<p>:set ignorecase　　忽略大小写的查找</p>
+<p>:set noignorecase　　不忽略大小写的查找</p>
+<p>查找很长的词，如果一个词很长，键入麻烦，可以将光标移动到该词上，按*或#键即可以该单词进行搜索，相当于/搜索。而#命令相当于?搜索。</p>
+<p>:set hlsearch　　高亮搜索结果，所有结果都高亮显示，而不是只显示一个匹配。</p>
+<p>:set nohlsearch　　关闭高亮搜索显示</p>
+<p>:nohlsearch　　关闭当前的高亮显示，如果再次搜索或者按下n或N键，则会再次高亮。</p>
+<p>:set incsearch　　逐步搜索模式，对当前键入的字符进行搜索而不必等待键入完成。</p>
+<p>:set wrapscan　　重新搜索，在搜索到文件头或尾时，返回继续搜索，默认开启。</p>
+<p>替换命令<br>ra 将当前字符替换为a，当期字符即光标所在字符。</p>
+<p>s/old/new/ 用old替换new，替换当前行的第一个匹配</p>
+<p>s/old/new/g 用old替换new，替换当前行的所有匹配</p>
+<p>%s/old/new/ 用old替换new，替换所有行的第一个匹配</p>
+<p>%s/old/new/g 用old替换new，替换整个文件的所有匹配</p>
+<p>:10,20 s/^/ /g 在第10行知第20行每行前面加四个空格，用于缩进。</p>
+<p>ddp 交换光标所在行和其下紧邻的一行。</p>
+<p>移动命令<br>h 左移一个字符<br>l 右移一个字符，这个命令很少用，一般用w代替。<br>k 上移一个字符<br>j 下移一个字符</p>
+<p>以上四个命令可以配合数字使用，比如20j就是向下移动20行，5h就是向左移动5个字符，在Vim中，很多命令都可以配合数字使用，比如删除10个字符10x，在当前位置后插入3个！，3a！，这里的Esc是必须的，否则命令不生效。</p>
+<p>w 向前移动一个单词（光标停在单词首部），如果已到行尾，则转至下一行行首。此命令快，可以代替l命令。</p>
+<p>b 向后移动一个单词 2b 向后移动2个单词</p>
+<p>e，同w，只不过是光标停在单词尾部</p>
+<p>ge，同b，光标停在单词尾部。</p>
+<p>^ 移动到本行第一个非空白字符上。</p>
+<p>0（数字0）移动到本行第一个字符上，</p>
+<p>移动到本行第一个字符。同0健。</p>
+<p>$ 移动到行尾 3$ 移动到下面3行的行尾</p>
+<p>gg 移动到文件头。 = [[</p>
+<p>G（shift + g） 移动到文件尾。 = ]]</p>
+<p>f（find）命令也可以用于移动，fx将找到光标后第一个为x的字符，3fd将找到第三个为d的字符。</p>
+<p>F 同f，反向查找。</p>
+<p>跳到指定行，冒号+行号，回车，比如跳到240行就是 :240回车。另一个方法是行号+G，比如230G跳到230行。</p>
+<p>Ctrl + e 向下滚动一行</p>
+<p>Ctrl + y 向上滚动一行</p>
+<p>Ctrl + d 向下滚动半屏</p>
+<p>Ctrl + u 向上滚动半屏</p>
+<p>Ctrl + f 向下滚动一屏</p>
+<p>Ctrl + b 向上滚动一屏</p>
+<p>撤销和重做<br>u 撤销（Undo）</p>
+<p>U 撤销对整行的操作</p>
+<p>Ctrl + r 重做（Redo），即撤销的撤销。</p>
+<p>删除命令<br>x 删除当前字符</p>
+<p>3x 删除当前光标开始向后三个字符</p>
+<p>X 删除当前字符的前一个字符。X=dh</p>
+<p>dl 删除当前字符， dl=x</p>
+<p>dh 删除前一个字符</p>
+<p>dd 删除当前行</p>
+<p>dj 删除上一行</p>
+<p>dk 删除下一行</p>
+<p>10d 删除当前行开始的10行。</p>
+<p>D 删除当前字符至行尾。D=d$</p>
+<p>d$ 删除当前字符之后的所有字符（本行）</p>
+<p>kdgg 删除当前行之前所有行（不包括当前行）</p>
+<p>jdG（jd shift + g） 删除当前行之后所有行（不包括当前行）</p>
+<p>:1,10d 删除1-10行</p>
+<p>:11,$d 删除11行及以后所有的行</p>
+<p>:1,$d 删除所有行</p>
+<p>J(shift + j)　　删除两行之间的空行，实际上是合并两行。</p>
+<p>拷贝和粘贴<br>yy 拷贝当前行</p>
+<p>nyy 拷贝当前后开始的n行，比如2yy拷贝当前行及其下一行。</p>
+<p>p 在当前光标后粘贴,如果之前使用了yy命令来复制一行，那么就在当前行的下一行粘贴。</p>
+<p>shift+p 在当前行前粘贴</p>
+<p>:1,10 co 20 将1-10行插入到第20行之后。</p>
+<p>:1,$ co $ 将整个文件复制一份并添加到文件尾部。</p>
+<p>正常模式下按v（逐字）或V（逐行）进入可视模式，然后用jklh命令移动即可选择某些行或字符，再按y即可复制</p>
+<p>ddp交换当前行和其下一行</p>
+<p>xp交换当前字符和其后一个字符</p>
+<p>剪切命令<br>正常模式下按v（逐字）或V（逐行）进入可视模式，然后用jklh命令移动即可选择某些行或字符，再按d即可剪切</p>
+<p>ndd 剪切当前行之后的n行。利用p命令可以对剪切的内容进行粘贴</p>
+<p>:1,10d 将1-10行剪切。利用p命令可将剪切后的内容进行粘贴。</p>
+<p>:1, 10 m 20 将第1-10行移动到第20行之后。</p>
+<p>退出命令<br>:wq 保存并退出</p>
+<p>ZZ 保存并退出</p>
+<p>:q! 强制退出并忽略所有更改</p>
+<p>:e! 放弃所有修改，并打开原来文件。</p>
+<p>窗口命令<br>:split或new 打开一个新窗口，光标停在顶层的窗口上</p>
+<p>:split file或:new file 用新窗口打开文件</p>
+<p>split打开的窗口都是横向的，使用vsplit可以纵向打开窗口。</p>
+<p>Ctrl+ww 移动到下一个窗口</p>
+<p>Ctrl+wj 移动到下方的窗口</p>
+<p>Ctrl+wk 移动到上方的窗口</p>
+<p>关闭窗口<br>:close 最后一个窗口不能使用此命令，可以防止意外退出vim。<br>:q 如果是最后一个被关闭的窗口，那么将退出vim。</p>
+<p>ZZ 保存并退出。</p>
+<p>关闭所有窗口，只保留当前窗口<br>:only</p>
+<p>录制宏<br>按q键加任意字母开始录制，再按q键结束录制（这意味着vim中的宏不可嵌套），使用的时候@加宏名，比如qa。。。q录制名为a的宏，@a使用这个宏。</p>
+<p>执行shell命令<br>:!command</p>
+<p>:!ls 列出当前目录下文件</p>
+<p>:!perl -c script.pl 检查perl脚本语法，可以不用退出vim，非常方便。</p>
+<p>:!perl script.pl 执行perl脚本，可以不用退出vim，非常方便。</p>
+<p>:suspend或Ctrl – Z 挂起vim，回到shell，按fg可以返回vim。</p>
+<p>注释命令<br>perl程序中#开始的行为注释，所以要注释某些行，只需在行首加入#</p>
+<p>3,5 s/^/#/g 注释第3-5行</p>
+<p>3,5 s/^#//g 解除3-5行的注释</p>
+<p>1,$ s/^/#/g 注释整个文档。</p>
+<p>:%s/^/#/g 注释整个文档，此法更快。</p>
+<p>帮助命令<br>:help or F1 显示整个帮助<br>:help xxx 显示xxx的帮助，比如 :help i, :help CTRL-[（即Ctrl+[的帮助）。<br>:help ‘number’ Vim选项的帮助用单引号括起<br>:help 特殊键的帮助用&lt;&gt;扩起<br>:help -t Vim启动参数的帮助用-<br>:help i_ 插入模式下Esc的帮助，某个模式下的帮助用模式_主题的模式</p>
+<p>帮助文件中位于||之间的内容是超链接，可以用Ctrl+]进入链接，Ctrl+o（Ctrl + t）返回</p>
+<p>其他非编辑命令<br>. 重复前一次命令</p>
+<p>:set ruler?　　查看是否设置了ruler，在.vimrc中，使用set命令设制的选项都可以通过这个命令查看</p>
+<p>:scriptnames　　查看vim脚本文件的位置，比如.vimrc文件，语法文件及plugin等。</p>
+<p>:set list 显示非打印字符，如tab，空格，行尾等。如果tab无法显示，请确定用set lcs=tab:&gt;-命令设置了.vimrc文件，并确保你的文件中的确有tab，如果开启了expendtab，那么tab将被扩展为空格。</p>
+<p>vi命令示例大全<br>进入vivi filename                    # 打开或新建文件，并将光标置于第一行首vi +n filename               # 打开文件，并将光标置于第n行首vi + filename                 # 打开文件，并将光标置于最后一行首vi +/pattern filename     # 打开文件，并将光标置于第一个与pattern匹配的串处vi -r filename                 # 在上次正用vi编辑时发生系统崩溃，恢复filenamevi filename….filename   # 打开多个文件，依次进行编辑保存退出w                                   # 保存当前文件 w /tmp1                         # 另存为/tmp1 20,59w /tmp1                # 仅将20-59行之间的内存另存为/tmp1 x 或 wq                         # 保存退出 q                                   # 退出vi q!                                  # 退出不保存 !command                    # 执行shell命令command n1,n2 w !command       # 将文件中n1行至n2行的内容作为command的输入并执行之，若不指定n1，n2，则表示将整个文件内容作为command的输入 r !command                  # 将命令command的输出结果放到当前行 w !sudo tee %              # 保存没权限时，可获取权限再保存 光标移动h                    # 光标左移一个字符 l                      # 光标右移一个字符 space             # 光标右移一个字符 Backspace     # 光标左移一个字符 k 或 Ctrl+p     # 光标上移一行 j 或 Ctrl+n      # 光标下移一行 Enter             # 光标下移一行 w 或 W          # 光标右移一个字至字首 b 或 B            # 光标左移一个字至字首 e 或 E            # 光标右移一个字至字尾 )                    # 光标移至句尾 (                    # 光标移至句首 }                   # 光标移至段落开头 {                   # 光标移至段落结尾 nG               # 光标移至第n行首 n+               # 光标下移n行 n-                # 光标上移n行 n$                # 光标移至第n行尾 H                 # 光标移至屏幕顶行 M                # 光标移至屏幕中间行 L                 # 光标移至屏幕最后行 0                 # （注意是数字零）光标移至当前行首 $                 # 光标移至当前行尾 屏幕翻滚Ctrl+u         # 向文件首翻半屏 Ctrl+d         # 向文件尾翻半屏 Ctrl+f          # 向文件尾翻一屏 Ctrl＋b        # 向文件首翻一屏 nz               # 将第n行滚至屏幕顶部，不指定n时将当前行滚至屏幕顶部 插入i                  # 在光标前 I                  # 在当前行首 a                 # 光标后 A                 # 在当前行尾 o                 # 在当前行之下新开一行 O                # 在当前行之上新开一行 r                 # 替换当前字符 R                # 替换当前字符及其后的字符，直至按ESC键 s                 # 从当前光标位置处开始，以输入的文本替代指定数目的字符 S                 # 删除指定数目的行，并以所输入文本代替之 ncw 或 nCW          # 修改指定数目的字 nCC             # 修改指定数目的行 删除ndw 或 ndW              # 删除光标处开始及其后的n-1个字 do                             # 删至行首 d$                             # 删至行尾 ndd                           # 删除当前行及其后n-1行 x 或 X                       # 删除一个字符，x删除光标后的，而X删除光标前的 Ctrl+u                       # 删除输入方式下所输入的文本 n1,n2 d                    # 将n1行到n2行之间的内容删除 %d                           # 删除全部内容 1,$d                         # 删除全部内容 复制粘贴、剪切、移动yy                     # 复制当前行 nyy                   # 复制当前行开始的n行 先按 v 然后方向键选择区域，按 y 复制选中行 dd                    # 剪切当前行 p（小）           # 在当前光标处下面粘贴内容。 P（大）           # 在当前光标处上面粘贴内容 n1,n2 co n3     # 将n1行到n2行之间的内容拷贝到第n3行下 n1,n2 m n3      # 将n1行到n2行之间的内容移至到第n3行下 搜索（查找）/abc                 # 从光标开始处向文件尾搜索abc ?abc                # 从光标开始处向文件首搜索abc /\/abc               # 从光标开始处向文件尾搜索/abc，其中/是转义 n                     # 在同一方向重复上一次搜索命令 N                     # 在反方向上重复上一次搜索命令 替换s/vivian/sky/                 # 替换当前行第一个 vivian 为 sky s/vivian/sky/g               # 替换当前行所有 vivian 为 sky n,$s/vivian/sky/            # 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky n,$s/vivian/sky/g          # 替换第 n 行开始到最后一行中每一行所有 vivian 为sky %s/vivian/sky/g # （等同于 g/vivian/s//sky/） 替换每一行的每一个 vivian 为 sky s#vivian/#sky/# # 替换当前行第一个 vivian/ 为 sky/（可以使用 #或+作为分隔符，此时中间出现的 / 不会作为分隔符） s/p1/p2/g # 将当前行中所有p1均用p2替代 n1,n2s/p1/p2/g # 将第n1至n2行中所有p1均用p2替代 g/p1/s//p2/g # 将文件中所有p1均用p2替换 寄存器”?nyy # 将当前行及其下n行的内容保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyw # 将当前行及其下n个字保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyl # 将当前行及其下n个字符保存到寄存器？中，其中?为一个字母，n为一个数字 “?p # 取出寄存器？中的内容并将其放到光标位置处。这里？可以是一个字母，也可以是一个数字 ndd # 将当前行及其下共n行文本删除，并将所删内容放到1号删除寄存器中。 选项设置set number # 显示行号 set number! # 不显示行号，其它选项同理加！号 set all # 列出所有选项设置情况 set term # 设置终端类型 set ignorance # 在搜索中忽略大小写 set list # 显示制表位(Ctrl+I)和行尾标志（$) set report # 显示由面向行的命令修改过的数目 set terse # 显示简短的警告信息 set warn # 在转到别的文件时若没保存当前文件则显示NO write信息 set nomagic # 允许在搜索模式中，使用前面不带“”的特殊字符 set nowrapscan # 禁止vi在搜索到达文件两端时，又从另一端开始 set mesg # 允许vi显示其他用户用write写到自己终端上的信息</p>
+<p>作者：eet2018<br>链接：<a href="https://www.jianshu.com/p/6cce73a8244c" target="_blank" rel="noopener">https://www.jianshu.com/p/6cce73a8244c</a><br>来源：简书<br>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -419,9 +615,26 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2019/06/21/Laravel-艺术家的框架/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                Laravel--艺术家的框架</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
         
           
-            <div class="post-nepre full next">
+            <div class="post-nepre half next">
           
             <a href="/2019/06/19/域名绑定github-page/" rel="next">
               <div class="background">

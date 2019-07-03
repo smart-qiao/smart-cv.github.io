@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-19T12:52:53.043Z</updated>
+  <updated>2019-06-30T15:01:05.457Z</updated>
   <id>/</id>
   
   <author>
@@ -17,13 +17,94 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>面向对象的 css (OO CSS)</title>
+    <link href="/2019/06/27/OO-CSS/"/>
+    <id>/2019/06/27/OO-CSS/</id>
+    <published>2019-06-27T10:46:12.000Z</published>
+    <updated>2019-06-30T15:01:05.457Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;OO-CSS&quot;&gt;&lt;a href=&quot;#OO-CSS&quot; class=&quot;headerlink&quot; title=&quot;OO CSS&quot;&gt;&lt;/a&gt;OO CSS&lt;/h2&gt;&lt;h3 id=&quot;注意事项&quot;&gt;&lt;a href=&quot;#注意事项&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="/2019/06/22/%E5%AE%9D%E5%A1%94%E9%83%A8%E7%BD%B2/"/>
+    <id>/2019/06/22/宝塔部署/</id>
+    <published>2019-06-22T01:23:25.128Z</published>
+    <updated>2019-05-05T05:52:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;部署&lt;/p&gt;
+&lt;h2 id=&quot;宝塔部署&quot;&gt;&lt;a href=&quot;#宝塔部署&quot; class=&quot;headerlink&quot; title=&quot;宝塔部署&quot;&gt;&lt;/a&gt;宝塔部署&lt;/h2&gt;&lt;h3 id=&quot;安装宝塔面板&quot;&gt;&lt;a href=&quot;#安装宝塔面板&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Laravel--艺术家的框架</title>
+    <link href="/2019/06/21/Laravel-%E8%89%BA%E6%9C%AF%E5%AE%B6%E7%9A%84%E6%A1%86%E6%9E%B6/"/>
+    <id>/2019/06/21/Laravel-艺术家的框架/</id>
+    <published>2019-06-21T13:33:30.000Z</published>
+    <updated>2019-06-22T05:39:17.249Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;composer install&lt;br&gt;composer config -g repo.packagist composer &lt;a href=&quot;https://packagist.composer-proxy.org&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>vi常用命令</title>
     <link href="/2019/06/19/vi%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>/2019/06/19/vi常用命令/</id>
     <published>2019-06-19T12:52:53.000Z</published>
-    <updated>2019-06-19T12:52:53.043Z</updated>
+    <updated>2019-06-22T00:22:11.379Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux vi中查找字符内容的方法&lt;/p&gt;
+&lt;p&gt;使用vi编辑器编辑长文件时，常常是头昏眼花，也找不到需要更改的内容。&lt;/p&gt;
+&lt;p&gt;这时，使用查找功能尤为重要。&lt;/p&gt;
+&lt;p&gt;方法如下：&lt;/p&gt;
+&lt;p&gt;1、命令模式下输入“/字符串”，例如“/Section
+        
+      
     
     </summary>
     
@@ -421,82 +502,6 @@ ctrl_interface=DIR=/var/run/wpa_supplicant
     </summary>
     
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用hexo+github快速搭建个人博客</title>
-    <link href="/2019/06/05/%E4%BD%BF%E7%94%A8hexo+github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>/2019/06/05/使用hexo+github快速搭建个人博客/</id>
-    <published>2019-06-05T00:00:38.000Z</published>
-    <updated>2019-06-06T14:02:13.308Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;p&gt;安装前提&lt;br&gt;在安装前，先确保电脑上已经安装了 &lt;a href=&quot;https://nodejs.org/en/&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>简单实用的js小技巧</title>
-    <link href="/2019/05/17/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>/2019/05/17/简单实用的js小技巧/</id>
-    <published>2019-05-17T05:46:24.000Z</published>
-    <updated>2019-06-18T13:06:06.305Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;document-body-innerText&quot;&gt;&lt;a href=&quot;#document-body-innerText&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vscode右键添加菜单</title>
-    <link href="/2019/04/18/vscode%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%8F%9C%E5%8D%95/"/>
-    <id>/2019/04/18/vscode右键添加菜单/</id>
-    <published>2019-04-18T03:16:46.000Z</published>
-    <updated>2019-06-18T12:50:09.244Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;新建 1.reg&lt;br&gt;    键入&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\*\shell\VSCode]
-@=&amp;quot;Open with
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
