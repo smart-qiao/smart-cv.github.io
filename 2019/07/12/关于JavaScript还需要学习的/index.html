@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">使用hexo+github快速搭建个人博客 | 最爱悄悄呀</title>
+  <title itemprop="name">关于JavaScript还需要学习的 | 最爱悄悄呀</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -377,30 +377,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
 
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      使用hexo+github快速搭建个人博客</h1>
-      <p class="entry-census">
-        <span>
-          <a href="hojun.cn">
-            <img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="hojun.cn">张哲</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2019-6-5<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
-  </div>
-
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
@@ -408,68 +384,155 @@
         <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
+          <header class="entry-header">
+            <h1 class="entry-title">关于JavaScript还需要学习的</h1>
+            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-7-12&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+
+            <hr>
+          </header>
+        
         <div class="entry-content">
-          <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装前提<br>在安装前，先确保电脑上已经安装了 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 和 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>环境。<br><img src="https://i.loli.net/2019/05/22/5ce4d88b2330e96430.png" alt></p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></h2><p><code>sudo npm install hexo-cli -g</code><br>官方是使用 <code>npm</code> 进行安装，有推荐使用 <a href="https://yarnpkg.com/zh-Hans/" target="_blank" rel="noopener">yarn</a>进行安装，关于 <code>yarn</code>和 <code>npm</code> 优劣分析，可以参考这篇文章<a href="http://web.jobbole.com/88459/" target="_blank" rel="noopener">《Yarn vs npm: 你需要知道的一切》</a></p>
-<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>先新建一个<code>blog</code>文件夹，然后进入该文件夹运行：</p>
-<p>初始化: <code>hexo init</code><br>继续运行: <code>hexo g &amp;&amp; hexo s</code></p>
-<p>运行成功后会发现提示信息：</p>
-<pre><code>MacOSdeMacBook-Pro:lovely macos$ hexo s
-INFO  Start processing
-INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop
-</code></pre><p>这个时候访问 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就会发现网站已经建好了！</p>
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>以下 4 个是我在搭建过程中发现使用频率最高的 4 个命令，甚至我感觉只要会这 4 个命令就可以了。</p>
-<p>1.generate<br>生成静态文件<br><code>hexo generate</code></p>
-<p>2.server<br>启动服务器<br><code>hexo server</code></p>
-<p>3.deploy<br>部署网站<br><code>hexo deploy</code></p>
-<p>4.clean<br>清除缓存文件（db.json）和已生成的静态文件（public）<br><code>hexo clean</code></p>
-<p>更多命令和参数请看 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">这里</a>！</p>
-<h3 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h3><p>首先先到 <a href="https://github.com/" target="_blank" rel="noopener">Github</a> 上新建一个仓库，仓库名的格式为：<br><code>*.github.io</code><br>例如我的就是<code>dearzhe.github.io</code> ，创建好后，复制仓库的 HTTPS地址，打开<code>blog</code>根目录下的 <code>_config.yml</code>文件，拖动到底部找到<code>deploy</code>配置，按照以下格式修改并保存：</p>
-<p>deploy:<br>type: git<br>repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git<br>branch: master<br>这个时候安装 hexo-deployer-git 自动部署发布工具<br><code>npm install hexo-deployer-git --save</code></p>
-<h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>设置<code>user name</code>和<code>email</code>：</p>
-<p>git config –global user.name “你的GitHub用户名”<br>git config –global user.email “你的GitHub注册邮箱”<br>生成ssh密钥:输入下面命令</p>
-<p><code>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code></p>
-<p>一般情况下是不需要密码的，所以，接下来直接回车就好。<br>此时，在用户文件夹下就会有一个新的文件夹<code>.ssh</code>，里面有刚刚创建的<code>ssh</code>密钥文件<code>id_rsa</code>和<code>id_rsa.pub</code>。<br><code>vim ~/.ssh/id_rsa.pub</code></p>
-<p>注：<code>id_rsa</code>文件是私钥，要妥善保管，<code>id_rsa.pub</code>是公钥文件。</p>
-<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>###安装 NexT<br><code>git clone https://github.com/theme-next/hexo-theme-next</code></p>
-<p>修改<code>_config.yml</code> 文件里 <code>theme</code> 配置：</p>
-<p><code>theme: hexo-theme-next</code></p>
-<p>切换成NexT主题，在<code>hexo</code>根文件夹下，编辑<code>_config.yml</code>文件</p>
-<p><code>theme: hexo-theme-next</code></p>
-<p>切换后，清下本地缓存<br><code>hexo clean</code></p>
-<p>执行<code>hexo s</code>本地产看<code>NexT</code>主题效果</p>
-<p>切换主题<br>在列表中选择一款自己喜欢的主题风格。</p>
-<h1 id="Schemes"><a href="#Schemes" class="headerlink" title="Schemes"></a>Schemes</h1><p>scheme: Muse  //默认主题</p>
-<p>#scheme: Mist</p>
-<p>#scheme: Pisces //我选的是这个</p>
-<p>#scheme: Gemini</p>
-<h3 id="设置Menu"><a href="#设置Menu" class="headerlink" title="设置Menu"></a>设置Menu</h3><p>默认只有两个首页和归档.</p>
-<p>如果还要添加，编辑<code>themes/next/_config.yml</code>：</p>
-<pre><code>menu:
-home: / || home //首页
-about: /about/ || user //关于
-tags: /tags/ || tags //标签
-categories: /categories/ || th //分类
-archives: /archives/ || archive //归档
-schedule: /schedule/ || calendar //日程表
-sitemap: /sitemap.xml || sitemap //站点地图
-
-</code></pre><ol>
-<li>创建“分类”页面<br><code>hexo new page categories</code></li>
+          <h1 id="JS事件"><a href="#JS事件" class="headerlink" title="JS事件"></a>JS事件</h1><h2 id="JacaScript-常用事件"><a href="#JacaScript-常用事件" class="headerlink" title="JacaScript 常用事件"></a>JacaScript 常用事件</h2><table>
+<thead>
+<tr>
+<th style="text-align:left"><code>事件</code></th>
+<th style="text-align:left"><code>描述</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>onClick</code></td>
+<td style="text-align:left"><code>单击事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onMouseOver</code></td>
+<td style="text-align:left"><code>鼠标经过事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onMouseOut</code></td>
+<td style="text-align:left"><code>鼠标移出事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onChange</code></td>
+<td style="text-align:left"><code>文本内容改变事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onSelect</code></td>
+<td style="text-align:left"><code>文本框选中事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onFocus</code></td>
+<td style="text-align:left"><code>光标聚集事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onBlur</code></td>
+<td style="text-align:left"><code>移开光标事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onLoad</code></td>
+<td style="text-align:left"><code>网页加载事件</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>onUnload</code></td>
+<td style="text-align:left"><code>关闭网页事件</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="HTML-DOM"><a href="#HTML-DOM" class="headerlink" title="HTML DOM"></a>HTML DOM</h2><ol>
+<li>当网页被加载时，浏览器会创建页面的文档对象模型(Document Object Model)<br><img src="https://i.loli.net/2019/07/12/5d289b6a6ba9696234.png" alt="dom.png"></li>
+<li>DOM 简介:<ul>
+<li>JavaScript 能改变页面中的所有HTML元素</li>
+<li>JavaScript 能改变页面中的所有HTML属性</li>
+<li>JavaScript 能改变页面中的所有CSS样式</li>
+<li>JavaScript 能够应对页面中的所有事件做出反应</li>
+</ul>
+</li>
+<li><p>DOM 操作HTML:</p>
+<ul>
+<li>改变HTML输出流:<ul>
+<li>绝对不要在文档加载<code>完成</code>之后使用<code>document.wrie()</code>会覆盖该文档</li>
+</ul>
+</li>
+<li>寻找元素:<ul>
+<li>通过id找到HTML元素</li>
+<li>通过标签名找到HTML元素</li>
+</ul>
+</li>
+<li><p>改变HTML内容:</p>
+<ul>
+<li><p>使用属性:innerHTML<br>语法<br><code>function demo(){
+  var nav = document.getElementById(&quot;id&quot;).innerHTml = &quot;container&quot;
+}</code></p>
+<p><code>document.getElentmentByTagName(&quot;p&quot;); //匹配相同元素标签名的第一个</code></p>
+</li>
+</ul>
+</li>
+<li>改编HTML属性:<ul>
+<li>使用属性:attribute<br>语法<br><code>document.getElementById(&quot;herfid&quot;).href=&quot;#&quot;</code><br><code>document.getElementById(&quot;srcid&quot;).src=&quot;#&quot;......</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DOM 操作CSS:<ul>
+<li>通过DOM对象改变CSS<br>  语法<ul>
+<li><code>document.getElementById(&quot;id&quot;).style.property = new style;</code></li>
+<li><code>document.getElementById(&quot;id&quot;).style.coler= red;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DOM EventListener<ul>
+<li>方法: <pre><code>  addEventListener();
+  removeEventListener();
+</code></pre></li>
+<li>addEventListener();</li>
+</ul>
+</li>
 </ol>
-<p>给标签页面添加类型<br>我们在<code>source</code>文件夹中的tags文件夹下找到<code>index.md</code>文件，并在它的头部加上<code>type</code>属性。<br>title: 文章分类<br>date: 2017-05-27 13:47:40</p>
-<p>type: “categories” #这部分是新添加的</p>
-<ol start="2">
-<li>创建“标签”页面<br><code>hexo new page tags</code><br>title: tags<br>date: 2018-08-06 22:48:29<br>type: “tags” #新添加的内容</li>
-</ol>
-<p>给模板添加分类属性<br>现在我们打开<code>scarffolds</code>文件夹里的<code>post.md</code>文件，给它的头部加上<code>categories</code>:，这样我们创建的所有新的文章都会自带这个属性，我们只需要往里填分类，就可以自动在网站上形成分类了。<br>title: 使用-Hexo-和-Github-快速搭建个人博客<br>date: 1558506405000<br>categories:<br>tags:<br>`</p>
-<p>设置侧边栏头像<br>编辑主题的_config.yml，新增字段 avatar， 值设置成头像的链接地址。</p>
-<p>其中，头像的链接地址可以是：</p>
-<p>完整的互联网 URL，例如：<a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="noopener">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
-<p>站点内的地址，例如：url: /images/avatar.gif</p>
-<h3 id="部署到-github-一个-README-md"><a href="#部署到-github-一个-README-md" class="headerlink" title="部署到 github 一个 README.md"></a>部署到 github 一个 README.md</h3><p>在Hexo目录下的source根目录新建 一个README.md。修改_config.yml中的skip_render参数值为README.md保存退出即可。<br>使用hexo d 命令就不会在渲染 README.md 这个文件了。</p>
-<p>参考<br><a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%A4%B4%E5%83%8F" target="_blank" rel="noopener">设置侧边栏头像</a><br><a href="https://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">next主题配置</a><br><a href="http://iread.io/2015/09/hexo-guide-5/" target="_blank" rel="noopener">Hexo系列教程: (五)部署时保证README.md不被渲染</a></p>
-
+<p>DOM</p>
+<h2 id="JS事件详解-事件流"><a href="#JS事件详解-事件流" class="headerlink" title="JS事件详解-事件流"></a>JS事件详解-事件流</h2><ul>
+<li>事件流<ul>
+<li>事件冒泡:由最具体的元素接收，然后<code>逐级向上传</code>播至最不具体的元素节点(DOM文档)</li>
+<li>事件捕获:最不具体的节点先接收事件，而最具体的节点应该是最后接受的事件</li>
+</ul>
+</li>
+</ul>
+<h2 id="JS事件详解-事件处理"><a href="#JS事件详解-事件处理" class="headerlink" title="JS事件详解-事件处理"></a>JS事件详解-事件处理</h2><ul>
+<li>HTML事件处理<ul>
+<li>直接添加到HTMl结构中</li>
+</ul>
+</li>
+<li>DOM0级事件处理 //会被覆盖<ul>
+<li>把一个函数值赋值给一个事件处理程序属性</li>
+</ul>
+</li>
+<li>DOM2级事件处理 //不会覆盖<ul>
+<li>addEventListener(“事件名”,”事件处理函数”,”布尔值”)</li>
+<li>true:事件捕获</li>
+<li>false:事件冒泡</li>
+<li>removeEventListener();</li>
+</ul>
+</li>
+<li>IE事件处理程序<ul>
+<li>attachEvent</li>
+<li>detachEvent</li>
+</ul>
+</li>
+</ul>
+<h2 id="JS事件详解-事件对象"><a href="#JS事件详解-事件对象" class="headerlink" title="JS事件详解-事件对象"></a>JS事件详解-事件对象</h2><ul>
+<li>事件对象:<ul>
+<li>在触发DOM事件的时候都会产生一个对象</li>
+</ul>
+</li>
+<li>事件对象envent:<ul>
+<li>type: 获取事件类型</li>
+<li>target: 获取事件元素目标</li>
+<li>stopPropagation():阻止事件冒泡</li>
+<li>preventDefault():阻止事件默认行为</li>
+</ul>
+</li>
+</ul>
+<h1 id="JS对象"><a href="#JS对象" class="headerlink" title="JS对象"></a>JS对象</h1>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -496,36 +559,19 @@ sitemap: /sitemap.xml || sitemap //站点地图
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/06/06/hello-world/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                Hello World</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2019/05/17/简单实用的js小技巧/" rel="next">
+            <a href="/2019/07/11/响应式布局的基本实现/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://i.loli.net/2019/07/11/5d26d256e7f5f29347.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                简单实用的js小技巧</h3>
+                响应式布局的基本实现</h3>
                 <hr>
               </div>
             </a>
@@ -549,11 +595,11 @@ sitemap: /sitemap.xml || sitemap //站点地图
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <a href="hojun.cn" class="profile gravatar"><img src="https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg" itemprop="image" alt="张哲" height="70" width="70"></a>
+          <a href="hojun.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="hojun.cn" itemprop="url" rel="author">张哲</a>
+            <a href="hojun.cn" itemprop="url" rel="author">dearzhe</a>
             </h3>
           </div>
         </div>

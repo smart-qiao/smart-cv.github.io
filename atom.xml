@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-07-11T04:48:19.877Z</updated>
+  <updated>2019-07-12T18:17:01.510Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于JavaScript还需要学习的</title>
+    <link href="/2019/07/12/%E5%85%B3%E4%BA%8EJavaScript%E8%BF%98%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84/"/>
+    <id>/2019/07/12/关于JavaScript还需要学习的/</id>
+    <published>2019-07-12T12:47:22.000Z</published>
+    <updated>2019-07-12T18:17:01.510Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JS事件&quot;&gt;&lt;a href=&quot;#JS事件&quot; class=&quot;headerlink&quot; title=&quot;JS事件&quot;&gt;&lt;/a&gt;JS事件&lt;/h1&gt;&lt;h2 id=&quot;JacaScript-常用事件&quot;&gt;&lt;a href=&quot;#JacaScript-常用事件&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>响应式布局的基本实现</title>
+    <link href="/2019/07/11/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0/"/>
+    <id>/2019/07/11/响应式布局的基本实现/</id>
+    <published>2019-07-11T05:51:47.000Z</published>
+    <updated>2019-07-11T11:25:35.355Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;响应式布局的基本实现&quot;&gt;&lt;a href=&quot;#响应式布局的基本实现&quot; class=&quot;headerlink&quot; title=&quot;响应式布局的基本实现&quot;&gt;&lt;/a&gt;响应式布局的基本实现&lt;/h2&gt;&lt;p&gt;1.CSS 中的Media Quary (媒体简介)；
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>vscode文本文档换行</title>
     <link href="/2019/07/11/vscode%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%E6%8D%A2%E8%A1%8C/"/>
     <id>/2019/07/11/vscode文本文档换行/</id>
     <published>2019-07-11T04:46:45.000Z</published>
-    <updated>2019-07-11T04:48:19.877Z</updated>
+    <updated>2019-07-11T05:51:55.669Z</updated>
     
     <summary type="html">
     
@@ -45,9 +93,17 @@
     <link href="/2019/07/07/BootStrap/"/>
     <id>/2019/07/07/BootStrap/</id>
     <published>2019-07-07T03:28:26.000Z</published>
-    <updated>2019-07-07T03:28:26.862Z</updated>
+    <updated>2019-07-11T11:06:20.188Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;BootStrap能干什么&quot;&gt;&lt;a href=&quot;#BootStrap能干什么&quot; class=&quot;headerlink&quot; title=&quot;BootStrap能干什么&quot;&gt;&lt;/a&gt;BootStrap能干什么&lt;/h2&gt;&lt;p&gt;####
+        
+      
     
     </summary>
     
@@ -121,29 +177,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="/2019/06/22/%E5%AE%9D%E5%A1%94%E9%83%A8%E7%BD%B2/"/>
-    <id>/2019/06/22/宝塔部署/</id>
-    <published>2019-06-22T01:23:25.128Z</published>
-    <updated>2019-05-05T05:52:11.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;部署&lt;/p&gt;
-&lt;h2 id=&quot;宝塔部署&quot;&gt;&lt;a href=&quot;#宝塔部署&quot; class=&quot;headerlink&quot; title=&quot;宝塔部署&quot;&gt;&lt;/a&gt;宝塔部署&lt;/h2&gt;&lt;h3 id=&quot;安装宝塔面板&quot;&gt;&lt;a href=&quot;#安装宝塔面板&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Laravel--艺术家的框架</title>
     <link href="/2019/06/21/Laravel-%E8%89%BA%E6%9C%AF%E5%AE%B6%E7%9A%84%E6%A1%86%E6%9E%B6/"/>
     <id>/2019/06/21/Laravel-艺术家的框架/</id>
@@ -183,30 +216,6 @@
 &lt;p&gt;这时，使用查找功能尤为重要。&lt;/p&gt;
 &lt;p&gt;方法如下：&lt;/p&gt;
 &lt;p&gt;1、命令模式下输入“/字符串”，例如“/Section
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>域名绑定github page</title>
-    <link href="/2019/06/19/%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9Agithub-page/"/>
-    <id>/2019/06/19/域名绑定github-page/</id>
-    <published>2019-06-19T00:27:44.000Z</published>
-    <updated>2019-06-19T00:31:59.844Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;ping 
         
       
     
@@ -401,48 +410,6 @@ ctrl_interface=DIR=/var/run/wpa_supplicant
   </entry>
   
   <entry>
-    <title></title>
-    <link href="/2019/06/10/%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90/"/>
-    <id>/2019/06/10/内存分析/</id>
-    <published>2019-06-10T08:57:45.686Z</published>
-    <updated>2019-06-14T19:51:05.253Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>树莓派之初次体验</title>
-    <link href="/2019/06/09/%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B9%8B%E5%88%9D%E6%AC%A1%E4%BD%93%E9%AA%8C/"/>
-    <id>/2019/06/09/树莓派之初次体验/</id>
-    <published>2019-06-09T11:18:42.000Z</published>
-    <updated>2019-06-19T12:46:31.299Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;有关树莓派系列的玩法很早就想写了，奈何手头事务繁忙，一直拖到这几天，&lt;br&gt;接下来，我会将自己在玩树莓派一路上总结的玩法和遇到的坑写下来，诸君共勉·&lt;br&gt;··了·&lt;/p&gt;
-&lt;p&gt;安装系统&lt;/p&gt;
-&lt;p&gt;1.首先呢，当然是去官网下载系统&lt;br&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
-    
-  </entry>
-  
-  <entry>
     <title>notepad</title>
     <link href="/2019/06/08/notepad/"/>
     <id>/2019/06/08/notepad/</id>
@@ -486,6 +453,54 @@ ctrl_interface=DIR=/var/run/wpa_supplicant
       
     
     </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用hexo+github快速搭建个人博客</title>
+    <link href="/2019/06/05/%E4%BD%BF%E7%94%A8hexo+github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>/2019/06/05/使用hexo+github快速搭建个人博客/</id>
+    <published>2019-06-05T00:00:38.000Z</published>
+    <updated>2019-06-06T14:02:13.308Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;p&gt;安装前提&lt;br&gt;在安装前，先确保电脑上已经安装了 &lt;a href=&quot;https://nodejs.org/en/&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简单实用的js小技巧</title>
+    <link href="/2019/05/17/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8%E7%9A%84js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>/2019/05/17/简单实用的js小技巧/</id>
+    <published>2019-05-17T05:46:24.000Z</published>
+    <updated>2019-06-18T13:06:06.305Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;document-body-innerText&quot;&gt;&lt;a href=&quot;#document-body-innerText&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
