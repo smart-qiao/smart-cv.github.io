@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-07-17T10:54:16.009Z</updated>
+  <updated>2019-08-04T13:50:01.697Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>全平台应用打包</title>
+    <link href="/2019/08/04/%E5%85%A8%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85/"/>
+    <id>/2019/08/04/全平台应用打包/</id>
+    <published>2019-08-04T10:49:41.000Z</published>
+    <updated>2019-08-04T13:50:01.697Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hybrid-APP-全平台打包&quot;&gt;&lt;a href=&quot;#Hybrid-APP-全平台打包&quot; class=&quot;headerlink&quot; title=&quot;Hybrid APP 全平台打包&quot;&gt;&lt;/a&gt;Hybrid APP 全平台打包&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;Hybrid
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue版的todolist</title>
+    <link href="/2019/08/03/vue%E7%89%88%E7%9A%84todolist/"/>
+    <id>/2019/08/03/vue版的todolist/</id>
+    <published>2019-08-03T13:31:37.000Z</published>
+    <updated>2019-08-03T14:48:30.431Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>js小技巧</title>
@@ -222,7 +263,7 @@
     <link href="/2019/06/21/Laravel-%E8%89%BA%E6%9C%AF%E5%AE%B6%E7%9A%84%E6%A1%86%E6%9E%B6/"/>
     <id>/2019/06/21/Laravel-艺术家的框架/</id>
     <published>2019-06-21T13:33:30.000Z</published>
-    <updated>2019-06-22T05:39:17.249Z</updated>
+    <updated>2019-08-04T14:15:17.783Z</updated>
     
     <summary type="html">
     
@@ -244,7 +285,7 @@
     <link href="/2019/06/19/vi%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>/2019/06/19/vi常用命令/</id>
     <published>2019-06-19T12:52:53.000Z</published>
-    <updated>2019-06-22T00:22:11.379Z</updated>
+    <updated>2019-08-03T15:18:55.461Z</updated>
     
     <summary type="html">
     
@@ -447,54 +488,6 @@ ctrl_interface=DIR=/var/run/wpa_supplicant
     
     
       <category term="LaTex" scheme="/tags/LaTex/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>notepad</title>
-    <link href="/2019/06/08/notepad/"/>
-    <id>/2019/06/08/notepad/</id>
-    <published>2019-06-08T05:26:39.000Z</published>
-    <updated>2019-06-14T19:51:05.261Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。&lt;/p&gt;
-&lt;p&gt;而今识尽愁滋味，欲说还休。欲说还休，却道天凉好个秋。&lt;/p&gt;
-&lt;p&gt;读书志在圣贤 非图科第&lt;br&gt;为官心存军国 岂计身家  
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2019/06/06/hello-world/"/>
-    <id>/2019/06/06/hello-world/</id>
-    <published>2019-06-06T15:44:57.513Z</published>
-    <updated>2019-06-04T01:58:22.455Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
     
   </entry>
   

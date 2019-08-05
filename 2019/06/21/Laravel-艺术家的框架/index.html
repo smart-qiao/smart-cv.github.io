@@ -393,7 +393,27 @@
         
         <div class="entry-content">
           <p>composer install<br>composer config -g repo.packagist composer <a href="https://packagist.composer-proxy.org" target="_blank" rel="noopener">https://packagist.composer-proxy.org</a><br>composer config -g repo.packagist composer <a href="https://p.staticq.com" target="_blank" rel="noopener">https://p.staticq.com</a><br>composer config -g repo.packagist composer <a href="https://packagist.phpcomposer.com" target="_blank" rel="noopener">https://packagist.phpcomposer.com</a></p>
-
+<p>1.安装PHP包管理工具composer</p>
+<p>安装 - Windows</p>
+<p>使用安装程序 这是将 Composer 安装在你机器上的最简单的方法。</p>
+<p>下载并且运行 Composer-Setup.exe，它将安装最新版本的 Composer ，并设置好系统的环境变量，因此你可以在任何目录下直接使用 composer 命令。</p>
+<p>composer下载地址：<a href="https://getcomposer.org/Composer-Setup.exe" target="_blank" rel="noopener">https://getcomposer.org/Composer-Setup.exe</a></p>
+<p>直接下载运行即可。</p>
+<p>安装完成后在终端输入</p>
+<p>composer -v</p>
+<p>2.安装PHP的laravel框架<br>php的laravel框架是一款非常优秀的php框架</p>
+<p>这是中文文档的网站：<a href="https://laravelacademy.org/" target="_blank" rel="noopener">https://laravelacademy.org/</a></p>
+<p>源码下载后进入项目根目录使用cmd命令行工具或者其他的终端工具都是可以，数据命令:</p>
+<p>composer install<br>安装完成后输入</p>
+<p>composer dump-autoload</p>
+<p>4.配置项目<br>把.env.example重命名为 .env </p>
+<p>5.生成数据库表<br>在根目录执行</p>
+<p>php artisan migrate<br>进行数据表迁移，MySQL一定要5.7以上，否则会报错</p>
+<p>数据表文件在这个目录下：wechatAlliance\database\migrations</p>
+<p>6.运行项目<br>在项目根目录运行</p>
+<p>php artian serve</p>
+<p>项目就跑起来了<br>浏览器访问<br><a href="http://127.0.0.1:8000" target="_blank" rel="noopener">http://127.0.0.1:8000</a></p>
+<h2 id="Laravel-的文件夹结构"><a href="#Laravel-的文件夹结构" class="headerlink" title="Laravel 的文件夹结构"></a><a href="https://learnku.com/docs/laravel/5.6/structure/1354" target="_blank" rel="noopener">Laravel 的文件夹结构</a></h2>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
