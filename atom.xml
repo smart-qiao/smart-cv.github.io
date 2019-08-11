@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-08-05T17:52:49.686Z</updated>
+  <updated>2019-08-11T09:08:58.392Z</updated>
   <id>/</id>
   
   <author>
@@ -17,13 +17,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>KMP算法</title>
+    <link href="/2019/08/11/kmp%E7%AE%97%E6%B3%95/"/>
+    <id>/2019/08/11/kmp算法/</id>
+    <published>2019-08-11T09:03:05.000Z</published>
+    <updated>2019-08-11T09:08:58.392Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;// KMP算法&lt;/p&gt;
+&lt;h1 id=&quot;KMP&quot;&gt;&lt;a href=&quot;#KMP&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="算法" scheme="/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速排序</title>
+    <link href="/2019/08/11/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    <id>/2019/08/11/快速排序/</id>
+    <published>2019-08-11T08:59:04.000Z</published>
+    <updated>2019-08-11T09:09:40.512Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;快速排序&quot;&gt;&lt;a href=&quot;#快速排序&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="算法" scheme="/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="/2019/08/11/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
+    <id>/2019/08/11/排序算法/</id>
+    <published>2019-08-11T08:48:22.000Z</published>
+    <updated>2019-08-11T09:11:17.602Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;// 排序算法&lt;/p&gt;
+&lt;h1 id=&quot;选择排序-selection-Sort&quot;&gt;&lt;a href=&quot;#选择排序-selection-Sort&quot; class=&quot;headerlink&quot; title=&quot;选择排序(selection
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="算法" scheme="/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式入门</title>
+    <link href="/2019/08/07/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%85%A5%E9%97%A8/"/>
+    <id>/2019/08/07/正则表达式入门/</id>
+    <published>2019-08-06T18:21:20.000Z</published>
+    <updated>2019-08-11T09:13:03.942Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="正则表达式" scheme="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>我竟然做了一个小游戏</title>
     <link href="/2019/08/06/%E6%88%91%E7%AB%9F%E7%84%B6%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
     <id>/2019/08/06/我竟然做了一个小游戏/</id>
     <published>2019-08-05T17:29:45.000Z</published>
-    <updated>2019-08-05T17:52:49.686Z</updated>
+    <updated>2019-08-11T09:05:49.318Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://www.srclove.cn/game.html&quot; target=&quot;_blank&quot;
+        
+      
     
     </summary>
     
@@ -62,7 +168,7 @@
     <link href="/2019/08/03/vue%E7%89%88%E7%9A%84todolist/"/>
     <id>/2019/08/03/vue版的todolist/</id>
     <published>2019-08-03T13:31:37.000Z</published>
-    <updated>2019-08-05T17:52:12.075Z</updated>
+    <updated>2019-08-11T09:14:49.083Z</updated>
     
     <summary type="html">
     
@@ -71,6 +177,8 @@
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="vue" scheme="/tags/vue/"/>
+    
   </entry>
   
   <entry>
@@ -78,7 +186,7 @@
     <link href="/2019/07/17/js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>/2019/07/17/js小技巧/</id>
     <published>2019-07-17T10:35:12.000Z</published>
-    <updated>2019-08-05T17:52:35.700Z</updated>
+    <updated>2019-08-11T09:11:46.747Z</updated>
     
     <summary type="html">
     
@@ -95,6 +203,8 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+      <category term="javascript" scheme="/tags/javascript/"/>
     
   </entry>
   
@@ -119,7 +229,7 @@
     <link href="/2019/07/12/%E5%85%B3%E4%BA%8EJavaScript%E8%BF%98%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84/"/>
     <id>/2019/07/12/关于JavaScript还需要学习的/</id>
     <published>2019-07-12T12:47:22.000Z</published>
-    <updated>2019-08-05T17:52:20.568Z</updated>
+    <updated>2019-08-11T09:09:59.360Z</updated>
     
     <summary type="html">
     
@@ -136,6 +246,8 @@
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="javascript" scheme="/tags/javascript/"/>
+    
   </entry>
   
   <entry>
@@ -143,7 +255,7 @@
     <link href="/2019/07/11/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0/"/>
     <id>/2019/07/11/响应式布局的基本实现/</id>
     <published>2019-07-11T05:51:47.000Z</published>
-    <updated>2019-08-05T17:52:40.574Z</updated>
+    <updated>2019-08-11T09:13:44.079Z</updated>
     
     <summary type="html">
     
@@ -160,6 +272,8 @@
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="bootstrap" scheme="/tags/bootstrap/"/>
+    
   </entry>
   
   <entry>
@@ -167,7 +281,7 @@
     <link href="/2019/07/11/vscode%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%E6%8D%A2%E8%A1%8C/"/>
     <id>/2019/07/11/vscode文本文档换行/</id>
     <published>2019-07-11T04:46:45.000Z</published>
-    <updated>2019-08-05T17:52:08.137Z</updated>
+    <updated>2019-08-11T09:15:38.570Z</updated>
     
     <summary type="html">
     
@@ -184,6 +298,8 @@
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="vscode" scheme="/tags/vscode/"/>
+    
   </entry>
   
   <entry>
@@ -191,7 +307,7 @@
     <link href="/2019/07/07/BootStrap/"/>
     <id>/2019/07/07/BootStrap/</id>
     <published>2019-07-07T03:28:26.000Z</published>
-    <updated>2019-08-05T17:52:39.220Z</updated>
+    <updated>2019-08-11T09:12:31.400Z</updated>
     
     <summary type="html">
     
@@ -207,6 +323,8 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+      <category term="bootstrap" scheme="/tags/bootstrap/"/>
     
   </entry>
   
@@ -301,7 +419,7 @@
     <link href="/2019/06/19/vi%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>/2019/06/19/vi常用命令/</id>
     <published>2019-06-19T12:52:53.000Z</published>
-    <updated>2019-08-05T17:52:30.987Z</updated>
+    <updated>2019-08-11T09:14:57.809Z</updated>
     
     <summary type="html">
     
@@ -322,6 +440,8 @@
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+      <category term="vim" scheme="/tags/vim/"/>
+    
   </entry>
   
   <entry>
@@ -329,7 +449,7 @@
     <link href="/2019/06/18/vscode%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
     <id>/2019/06/18/vscode好用的插件/</id>
     <published>2019-06-18T13:29:15.000Z</published>
-    <updated>2019-08-05T17:52:05.615Z</updated>
+    <updated>2019-08-11T09:14:21.137Z</updated>
     
     <summary type="html">
     
@@ -347,6 +467,8 @@
     
       <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+      <category term="vscode" scheme="/tags/vscode/"/>
     
   </entry>
   
@@ -374,110 +496,6 @@
     
     
       <category term="小程序" scheme="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python各种模块下载地址</title>
-    <link href="/2019/06/17/python%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9D%97%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/"/>
-    <id>/2019/06/17/python各种模块下载地址/</id>
-    <published>2019-06-17T06:20:48.000Z</published>
-    <updated>2019-08-05T17:52:32.099Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>词云</title>
-    <link href="/2019/06/17/%E8%AF%8D%E4%BA%91/"/>
-    <id>/2019/06/17/词云/</id>
-    <published>2019-06-17T06:10:00.000Z</published>
-    <updated>2019-08-05T17:52:15.629Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;词云安装&quot;&gt;&lt;a href=&quot;#词云安装&quot; class=&quot;headerlink&quot; title=&quot;词云安装&quot;&gt;&lt;/a&gt;词云安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;pip install numpy matplotlib pillow wordcloud imageio
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo渲染自定义html</title>
-    <link href="/2019/06/15/hexo%E6%B8%B2%E6%9F%93%E8%87%AA%E5%AE%9A%E4%B9%89html/"/>
-    <id>/2019/06/15/hexo渲染自定义html/</id>
-    <published>2019-06-15T01:23:20.000Z</published>
-    <updated>2019-08-05T17:52:38.284Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Hexo是静态页博客生成利器，同很多博主一样，&lt;a href=&quot;https://refined-x.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;前端路上&lt;/a&gt;原创技术博客也是使用Hexo生成并托管在Github
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>远程到树莓派</title>
-    <link href="/2019/06/14/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5wifi/"/>
-    <id>/2019/06/14/树莓派连接wifi/</id>
-    <published>2019-06-14T09:09:13.000Z</published>
-    <updated>2019-08-05T17:52:42.838Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;1.新建文件，文件名为&lt;code&gt;wpa_supplicant.conf&lt;/code&gt;  &lt;/p&gt;
-&lt;p&gt;写入&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;country=CN
-
-ctrl_interface=DIR=/var/run/wpa_supplicant
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="raspberry pi" scheme="/tags/raspberry-pi/"/>
     
   </entry>
   
