@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-08-11T09:08:58.392Z</updated>
+  <updated>2019-08-13T11:00:58.999Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>汇编语言</title>
+    <link href="/2019/08/13/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
+    <id>/2019/08/13/汇编语言/</id>
+    <published>2019-08-13T10:58:47.000Z</published>
+    <updated>2019-08-13T11:00:58.999Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;mips mars 模拟器·&lt;br&gt;&lt;a href=&quot;http://courses.missouristate.edu/kenvollmar/mars/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>KMP算法</title>
@@ -469,33 +493,6 @@
     
     
       <category term="vscode" scheme="/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html代码重构为微信小程序</title>
-    <link href="/2019/06/17/html%E4%BB%A3%E7%A0%81%E9%87%8D%E6%9E%84%E4%B8%BA%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    <id>/2019/06/17/html代码重构为微信小程序/</id>
-    <published>2019-06-17T12:21:46.000Z</published>
-    <updated>2019-08-05T17:52:37.424Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://github.com/dearzhe/douyinlovehtml&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;原项目地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="小程序" scheme="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
