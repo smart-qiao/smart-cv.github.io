@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -48,7 +48,7 @@
   /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp".split(",");
+  var bg = "http://cdn.our-love.top/image/bg/01.png,http://cdn.our-love.top/image/bg/02.png,http://cdn.our-love.top/image/bg/03.png,http://cdn.our-love.top/image/bg/04.png,http://cdn.our-love.top/image/bg/05.png,http://cdn.our-love.top/image/bg/06.png,http://cdn.our-love.top/image/bg/07.png,http://cdn.our-love.top/image/bg/08.png".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
   if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
     alert('朋友，IE浏览器未适配哦~');
@@ -133,8 +133,8 @@
       </div>
     </div>
   </figure>
-  <div id="video-container" style>
-    <video style="object-fit: fill" id="bgvideo" class="video" video-name src width="auto" preload="auto">
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
     <div id="video-btn" class="loadvideo videolive">
     </div>
@@ -386,7 +386,7 @@
         
           <header class="entry-header">
             <h1 class="entry-title">vi常用命令</h1>
-            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-19&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-19&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
 
             <hr>
           </header>
@@ -464,7 +464,7 @@
 <p>插入<br>i # 在光标前<br>I # 在当前行首<br>a # 光标后<br>A # 在当前行尾<br>o # 在当前行之下新开一行<br>O # 在当前行之上新开一行<br>r # 替换当前字符<br>R # 替换当前字符及其后的字符，直至按ESC键<br>s # 从当前光标位置处开始，以输入的文本替代指定数目的字符<br>S # 删除指定数目的行，并以所输入文本代替之<br>ncw 或 nCW # 修改指定数目的字<br>nCC # 修改指定数目的行</p>
 <p>删除<br>ndw 或 ndW # 删除光标处开始及其后的n-1个字<br>do # 删至行首<br>d$ # 删至行尾<br>ndd # 删除当前行及其后n-1行<br>x 或 X # 删除一个字符，x删除光标后的，而X删除光标前的<br>Ctrl+u # 删除输入方式下所输入的文本<br>n1,n2 d # 将n1行到n2行之间的内容删除<br>%d # 删除全部内容<br>1,$d # 删除全部内容</p>
 <p>复制粘贴、剪切、移动<br>yy # 复制当前行<br>nyy # 复制当前行开始的n行<br>先按 v 然后方向键选择区域，按 y 复制选中行<br>dd # 剪切当前行<br>p（小） # 在当前光标处下面粘贴内容。<br>P（大） # 在当前光标处上面粘贴内容<br>n1,n2 co n3 # 将n1行到n2行之间的内容拷贝到第n3行下<br>n1,n2 m n3 # 将n1行到n2行之间的内容移至到第n3行下</p>
-<p>搜索（查找）<br>/abc # 从光标开始处向文件尾搜索abc<br>?abc # 从光标开始处向文件首搜索abc<br>/\/abc # 从光标开始处向文件尾搜索/abc，其中/是转义<br>n # 在同一方向重复上一次搜索命令<br>N # 在反方向上重复上一次搜索命令</p>
+<p>搜索（查找）<br>/abc # 从光标开始处向文件尾搜索abc<br>?abc # 从光标开始处向文件首搜索abc<br>//abc # 从光标开始处向文件尾搜索/abc，其中/是转义<br>n # 在同一方向重复上一次搜索命令<br>N # 在反方向上重复上一次搜索命令</p>
 <p>替换<br>s/vivian/sky/ # 替换当前行第一个 vivian 为 sky<br>s/vivian/sky/g # 替换当前行所有 vivian 为 sky<br>n,$s/vivian/sky/ # 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky<br>n,$s/vivian/sky/g # 替换第 n 行开始到最后一行中每一行所有 vivian 为sky<br>%s/vivian/sky/g # （等同于 g/vivian/s//sky/） 替换每一行的每一个 vivian 为 sky<br>s#vivian/#sky/# # 替换当前行第一个 vivian/ 为 sky/（可以使用 #或+作为分隔符，此时中间出现的 / 不会作为分隔符）<br>s/p1/p2/g # 将当前行中所有p1均用p2替代<br>n1,n2s/p1/p2/g # 将第n1至n2行中所有p1均用p2替代<br>g/p1/s//p2/g # 将文件中所有p1均用p2替换</p>
 <p>寄存器<br>“?nyy # 将当前行及其下n行的内容保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?nyw # 将当前行及其下n个字保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?nyl # 将当前行及其下n个字符保存到寄存器？中，其中?为一个字母，n为一个数字<br>“?p # 取出寄存器？中的内容并将其放到光标位置处。这里？可以是一个字母，也可以是一个数字<br>ndd # 将当前行及其下共n行文本删除，并将所删内容放到1号删除寄存器中。</p>
 <p>选项设置<br>set number # 显示行号<br>set number! # 不显示行号，其它选项同理加！号<br>set all # 列出所有选项设置情况<br>set term # 设置终端类型<br>set ignorance # 在搜索中忽略大小写<br>set list # 显示制表位(Ctrl+I)和行尾标志（$)<br>set report # 显示由面向行的命令修改过的数目<br>set terse # 显示简短的警告信息<br>set warn # 在转到别的文件时若没保存当前文件则显示NO write信息<br>set nomagic # 允许在搜索模式中，使用前面不带“”的特殊字符<br>set nowrapscan # 禁止vi在搜索到达文件两端时，又从另一端开始<br>set mesg # 允许vi显示其他用户用write写到自己终端上的信息</p>
@@ -576,15 +576,15 @@
 <p>:set ruler?　　查看是否设置了ruler，在.vimrc中，使用set命令设制的选项都可以通过这个命令查看</p>
 <p>:scriptnames　　查看vim脚本文件的位置，比如.vimrc文件，语法文件及plugin等。</p>
 <p>:set list 显示非打印字符，如tab，空格，行尾等。如果tab无法显示，请确定用set lcs=tab:&gt;-命令设置了.vimrc文件，并确保你的文件中的确有tab，如果开启了expendtab，那么tab将被扩展为空格。</p>
-<p>vi命令示例大全<br>进入vivi filename                    # 打开或新建文件，并将光标置于第一行首vi +n filename               # 打开文件，并将光标置于第n行首vi + filename                 # 打开文件，并将光标置于最后一行首vi +/pattern filename     # 打开文件，并将光标置于第一个与pattern匹配的串处vi -r filename                 # 在上次正用vi编辑时发生系统崩溃，恢复filenamevi filename….filename   # 打开多个文件，依次进行编辑保存退出w                                   # 保存当前文件 w /tmp1                         # 另存为/tmp1 20,59w /tmp1                # 仅将20-59行之间的内存另存为/tmp1 x 或 wq                         # 保存退出 q                                   # 退出vi q!                                  # 退出不保存 !command                    # 执行shell命令command n1,n2 w !command       # 将文件中n1行至n2行的内容作为command的输入并执行之，若不指定n1，n2，则表示将整个文件内容作为command的输入 r !command                  # 将命令command的输出结果放到当前行 w !sudo tee %              # 保存没权限时，可获取权限再保存 光标移动h                    # 光标左移一个字符 l                      # 光标右移一个字符 space             # 光标右移一个字符 Backspace     # 光标左移一个字符 k 或 Ctrl+p     # 光标上移一行 j 或 Ctrl+n      # 光标下移一行 Enter             # 光标下移一行 w 或 W          # 光标右移一个字至字首 b 或 B            # 光标左移一个字至字首 e 或 E            # 光标右移一个字至字尾 )                    # 光标移至句尾 (                    # 光标移至句首 }                   # 光标移至段落开头 {                   # 光标移至段落结尾 nG               # 光标移至第n行首 n+               # 光标下移n行 n-                # 光标上移n行 n$                # 光标移至第n行尾 H                 # 光标移至屏幕顶行 M                # 光标移至屏幕中间行 L                 # 光标移至屏幕最后行 0                 # （注意是数字零）光标移至当前行首 $                 # 光标移至当前行尾 屏幕翻滚Ctrl+u         # 向文件首翻半屏 Ctrl+d         # 向文件尾翻半屏 Ctrl+f          # 向文件尾翻一屏 Ctrl＋b        # 向文件首翻一屏 nz               # 将第n行滚至屏幕顶部，不指定n时将当前行滚至屏幕顶部 插入i                  # 在光标前 I                  # 在当前行首 a                 # 光标后 A                 # 在当前行尾 o                 # 在当前行之下新开一行 O                # 在当前行之上新开一行 r                 # 替换当前字符 R                # 替换当前字符及其后的字符，直至按ESC键 s                 # 从当前光标位置处开始，以输入的文本替代指定数目的字符 S                 # 删除指定数目的行，并以所输入文本代替之 ncw 或 nCW          # 修改指定数目的字 nCC             # 修改指定数目的行 删除ndw 或 ndW              # 删除光标处开始及其后的n-1个字 do                             # 删至行首 d$                             # 删至行尾 ndd                           # 删除当前行及其后n-1行 x 或 X                       # 删除一个字符，x删除光标后的，而X删除光标前的 Ctrl+u                       # 删除输入方式下所输入的文本 n1,n2 d                    # 将n1行到n2行之间的内容删除 %d                           # 删除全部内容 1,$d                         # 删除全部内容 复制粘贴、剪切、移动yy                     # 复制当前行 nyy                   # 复制当前行开始的n行 先按 v 然后方向键选择区域，按 y 复制选中行 dd                    # 剪切当前行 p（小）           # 在当前光标处下面粘贴内容。 P（大）           # 在当前光标处上面粘贴内容 n1,n2 co n3     # 将n1行到n2行之间的内容拷贝到第n3行下 n1,n2 m n3      # 将n1行到n2行之间的内容移至到第n3行下 搜索（查找）/abc                 # 从光标开始处向文件尾搜索abc ?abc                # 从光标开始处向文件首搜索abc /\/abc               # 从光标开始处向文件尾搜索/abc，其中/是转义 n                     # 在同一方向重复上一次搜索命令 N                     # 在反方向上重复上一次搜索命令 替换s/vivian/sky/                 # 替换当前行第一个 vivian 为 sky s/vivian/sky/g               # 替换当前行所有 vivian 为 sky n,$s/vivian/sky/            # 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky n,$s/vivian/sky/g          # 替换第 n 行开始到最后一行中每一行所有 vivian 为sky %s/vivian/sky/g # （等同于 g/vivian/s//sky/） 替换每一行的每一个 vivian 为 sky s#vivian/#sky/# # 替换当前行第一个 vivian/ 为 sky/（可以使用 #或+作为分隔符，此时中间出现的 / 不会作为分隔符） s/p1/p2/g # 将当前行中所有p1均用p2替代 n1,n2s/p1/p2/g # 将第n1至n2行中所有p1均用p2替代 g/p1/s//p2/g # 将文件中所有p1均用p2替换 寄存器”?nyy # 将当前行及其下n行的内容保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyw # 将当前行及其下n个字保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyl # 将当前行及其下n个字符保存到寄存器？中，其中?为一个字母，n为一个数字 “?p # 取出寄存器？中的内容并将其放到光标位置处。这里？可以是一个字母，也可以是一个数字 ndd # 将当前行及其下共n行文本删除，并将所删内容放到1号删除寄存器中。 选项设置set number # 显示行号 set number! # 不显示行号，其它选项同理加！号 set all # 列出所有选项设置情况 set term # 设置终端类型 set ignorance # 在搜索中忽略大小写 set list # 显示制表位(Ctrl+I)和行尾标志（$) set report # 显示由面向行的命令修改过的数目 set terse # 显示简短的警告信息 set warn # 在转到别的文件时若没保存当前文件则显示NO write信息 set nomagic # 允许在搜索模式中，使用前面不带“”的特殊字符 set nowrapscan # 禁止vi在搜索到达文件两端时，又从另一端开始 set mesg # 允许vi显示其他用户用write写到自己终端上的信息</p>
+<p>vi命令示例大全<br>进入vivi filename                    # 打开或新建文件，并将光标置于第一行首vi +n filename               # 打开文件，并将光标置于第n行首vi + filename                 # 打开文件，并将光标置于最后一行首vi +/pattern filename     # 打开文件，并将光标置于第一个与pattern匹配的串处vi -r filename                 # 在上次正用vi编辑时发生系统崩溃，恢复filenamevi filename….filename   # 打开多个文件，依次进行编辑保存退出w                                   # 保存当前文件 w /tmp1                         # 另存为/tmp1 20,59w /tmp1                # 仅将20-59行之间的内存另存为/tmp1 x 或 wq                         # 保存退出 q                                   # 退出vi q!                                  # 退出不保存 !command                    # 执行shell命令command n1,n2 w !command       # 将文件中n1行至n2行的内容作为command的输入并执行之，若不指定n1，n2，则表示将整个文件内容作为command的输入 r !command                  # 将命令command的输出结果放到当前行 w !sudo tee %              # 保存没权限时，可获取权限再保存 光标移动h                    # 光标左移一个字符 l                      # 光标右移一个字符 space             # 光标右移一个字符 Backspace     # 光标左移一个字符 k 或 Ctrl+p     # 光标上移一行 j 或 Ctrl+n      # 光标下移一行 Enter             # 光标下移一行 w 或 W          # 光标右移一个字至字首 b 或 B            # 光标左移一个字至字首 e 或 E            # 光标右移一个字至字尾 )                    # 光标移至句尾 (                    # 光标移至句首 }                   # 光标移至段落开头 {                   # 光标移至段落结尾 nG               # 光标移至第n行首 n+               # 光标下移n行 n-                # 光标上移n行 n$                # 光标移至第n行尾 H                 # 光标移至屏幕顶行 M                # 光标移至屏幕中间行 L                 # 光标移至屏幕最后行 0                 # （注意是数字零）光标移至当前行首 $                 # 光标移至当前行尾 屏幕翻滚Ctrl+u         # 向文件首翻半屏 Ctrl+d         # 向文件尾翻半屏 Ctrl+f          # 向文件尾翻一屏 Ctrl＋b        # 向文件首翻一屏 nz               # 将第n行滚至屏幕顶部，不指定n时将当前行滚至屏幕顶部 插入i                  # 在光标前 I                  # 在当前行首 a                 # 光标后 A                 # 在当前行尾 o                 # 在当前行之下新开一行 O                # 在当前行之上新开一行 r                 # 替换当前字符 R                # 替换当前字符及其后的字符，直至按ESC键 s                 # 从当前光标位置处开始，以输入的文本替代指定数目的字符 S                 # 删除指定数目的行，并以所输入文本代替之 ncw 或 nCW          # 修改指定数目的字 nCC             # 修改指定数目的行 删除ndw 或 ndW              # 删除光标处开始及其后的n-1个字 do                             # 删至行首 d$                             # 删至行尾 ndd                           # 删除当前行及其后n-1行 x 或 X                       # 删除一个字符，x删除光标后的，而X删除光标前的 Ctrl+u                       # 删除输入方式下所输入的文本 n1,n2 d                    # 将n1行到n2行之间的内容删除 %d                           # 删除全部内容 1,$d                         # 删除全部内容 复制粘贴、剪切、移动yy                     # 复制当前行 nyy                   # 复制当前行开始的n行 先按 v 然后方向键选择区域，按 y 复制选中行 dd                    # 剪切当前行 p（小）           # 在当前光标处下面粘贴内容。 P（大）           # 在当前光标处上面粘贴内容 n1,n2 co n3     # 将n1行到n2行之间的内容拷贝到第n3行下 n1,n2 m n3      # 将n1行到n2行之间的内容移至到第n3行下 搜索（查找）/abc                 # 从光标开始处向文件尾搜索abc ?abc                # 从光标开始处向文件首搜索abc //abc               # 从光标开始处向文件尾搜索/abc，其中/是转义 n                     # 在同一方向重复上一次搜索命令 N                     # 在反方向上重复上一次搜索命令 替换s/vivian/sky/                 # 替换当前行第一个 vivian 为 sky s/vivian/sky/g               # 替换当前行所有 vivian 为 sky n,$s/vivian/sky/            # 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky n,$s/vivian/sky/g          # 替换第 n 行开始到最后一行中每一行所有 vivian 为sky %s/vivian/sky/g # （等同于 g/vivian/s//sky/） 替换每一行的每一个 vivian 为 sky s#vivian/#sky/# # 替换当前行第一个 vivian/ 为 sky/（可以使用 #或+作为分隔符，此时中间出现的 / 不会作为分隔符） s/p1/p2/g # 将当前行中所有p1均用p2替代 n1,n2s/p1/p2/g # 将第n1至n2行中所有p1均用p2替代 g/p1/s//p2/g # 将文件中所有p1均用p2替换 寄存器”?nyy # 将当前行及其下n行的内容保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyw # 将当前行及其下n个字保存到寄存器？中，其中?为一个字母，n为一个数字 “?nyl # 将当前行及其下n个字符保存到寄存器？中，其中?为一个字母，n为一个数字 “?p # 取出寄存器？中的内容并将其放到光标位置处。这里？可以是一个字母，也可以是一个数字 ndd # 将当前行及其下共n行文本删除，并将所删内容放到1号删除寄存器中。 选项设置set number # 显示行号 set number! # 不显示行号，其它选项同理加！号 set all # 列出所有选项设置情况 set term # 设置终端类型 set ignorance # 在搜索中忽略大小写 set list # 显示制表位(Ctrl+I)和行尾标志（$) set report # 显示由面向行的命令修改过的数目 set terse # 显示简短的警告信息 set warn # 在转到别的文件时若没保存当前文件则显示NO write信息 set nomagic # 允许在搜索模式中，使用前面不带“”的特殊字符 set nowrapscan # 禁止vi在搜索到达文件两端时，又从另一端开始 set mesg # 允许vi显示其他用户用write写到自己终端上的信息</p>
 
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
           <div class="reward-open">赏<div class="reward-main">
               <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6null"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6null"></li>
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6http://cdn.our-love.top/%23/img/custom/donatezfb.png"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6http://cdn.our-love.top/%23/img/custom/donatewx.png"></li>
               </ul>
             </div>
           </div>
@@ -609,7 +609,7 @@
           
             <a href="/2019/06/21/Laravel-艺术家的框架/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
               </div>
               <span class="label">
               Previous Post</span>
@@ -627,7 +627,7 @@
           
             <a href="/2019/06/18/vscode好用的插件/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
               </div>
               <span class="label">
               Next Post</span>
@@ -656,7 +656,7 @@
 </script>
 
       <section class="author-profile">
-        <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <a href="srclove.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
@@ -679,7 +679,7 @@
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词...">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -722,7 +722,7 @@
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
         </span>
       </p>
     </div>
@@ -742,7 +742,7 @@
 <script type="text/javascript" src="/js/zoom.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
 <!-- 不蒜子 网页计数器 -->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
@@ -806,7 +806,7 @@ $(document).ready(function() {
       </div>
     </div>
   </section>
-  <div id="mo-nav" class>
+  <div id="mo-nav" class="">
   <div class="m-avatar">
     <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/wangshiwu.jpg">
   </div>
@@ -1042,7 +1042,29 @@ $(document).ready(function() {
     background: rgba(255, 255, 255, 0.8);
   }
 </style>
-<div class="aplayer" data-id="2660651585" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-loop="all" data-order="random" data-preload="auto" data-volume="0.7" data-mutex="true" < div>
+<div class="aplayer"
+
+    data-id="2660651585"
+
+    data-server="netease"
+
+    data-type="playlist"
+
+    data-fixed="true"
+
+    data-autoplay="false"
+
+    data-loop="all"
+
+    data-order="random"
+
+    data-preload="auto"
+
+    data-volume="0.7"
+
+    data-mutex="true"
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
 <script>
   $(function(){
@@ -1054,7 +1076,7 @@ $(document).ready(function() {
       }
     })
   });
-</script></div>
+</script>
 </body>
         <script type="text/javascript" src="../source/js/custom.js"></script>
 </html>

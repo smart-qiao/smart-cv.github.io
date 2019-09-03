@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -48,7 +48,7 @@
   /*End of Initial Variables*/
   </script>
   <script type="text/javascript">
-  var bg = "https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(3).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(4).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(5).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(6).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(7).jpg.webp,https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(8).jpg.webp".split(",");
+  var bg = "http://cdn.our-love.top/image/bg/01.png,http://cdn.our-love.top/image/bg/02.png,http://cdn.our-love.top/image/bg/03.png,http://cdn.our-love.top/image/bg/04.png,http://cdn.our-love.top/image/bg/05.png,http://cdn.our-love.top/image/bg/06.png,http://cdn.our-love.top/image/bg/07.png,http://cdn.our-love.top/image/bg/08.png".split(",");
   var bgindex = Math.floor(Math.random()*bg.length);
   if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
     alert('朋友，IE浏览器未适配哦~');
@@ -133,8 +133,8 @@
       </div>
     </div>
   </figure>
-  <div id="video-container" style>
-    <video style="object-fit: fill" id="bgvideo" class="video" video-name src width="auto" preload="auto">
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
     <div id="video-btn" class="loadvideo videolive">
     </div>
@@ -386,7 +386,7 @@
         
           <header class="entry-header">
             <h1 class="entry-title">html代码重构为微信小程序</h1>
-            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-17&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p><p></p>
+            <p class="entry-census">dearzhe&nbsp;·&nbsp;2019-6-17&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
 
             <hr>
           </header>
@@ -403,8 +403,7 @@
      success:function(){ },//接口调用成功
      fail: function () { },  //接口调用失败的回调函数  
      complete: function () { } //接口调用结束的回调函数  
-})
-</code></pre><p>二、wx.showModal</p>
+})</code></pre><p>二、wx.showModal</p>
 <pre><code>wx.showModal({
      title: &#39;删除图片&#39;,
      content: &#39;确定要删除该图片？&#39;,
@@ -426,8 +425,7 @@
      },
      fail: function (res) { },//接口调用失败的回调函数
      complete: function (res) { },//接口调用结束的回调函数（调用成功、失败都会执行）
-  })
-</code></pre><p>三、wx.showActionSheet</p>
+  })</code></pre><p>三、wx.showActionSheet</p>
 <pre><code>wx.showActionSheet({
      itemList: [&#39;列1&#39;,&#39;列2&#39;,&#39;列3&#39;],//显示的列表项
      success: function (res) {//res.tapIndex点击的列表项
@@ -435,8 +433,7 @@
      },
      fail: function (res) { },
      complete:function(res){ }
-  })
-</code></pre><h2 id="类似于alert"><a href="#类似于alert" class="headerlink" title="类似于alert"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showModal.html" target="_blank" rel="noopener">类似于<code>alert</code></a></h2><h2 id="微信小程序-循环执行-设定固定时间间隔"><a href="#微信小程序-循环执行-设定固定时间间隔" class="headerlink" title="微信小程序 循环执行 设定固定时间间隔"></a>微信小程序 循环执行 设定固定时间间隔</h2><pre><code>setInterval(function () {
+  })</code></pre><h2 id="类似于alert"><a href="#类似于alert" class="headerlink" title="类似于alert"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/api/ui/interaction/wx.showModal.html" target="_blank" rel="noopener">类似于<code>alert</code></a></h2><h2 id="微信小程序-循环执行-设定固定时间间隔"><a href="#微信小程序-循环执行-设定固定时间间隔" class="headerlink" title="微信小程序 循环执行 设定固定时间间隔"></a>微信小程序 循环执行 设定固定时间间隔</h2><pre><code>setInterval(function () {
 //循环执行代码
 }, 1000) //循环时间 这里是1秒  
 满足条件 结束循环
@@ -448,16 +445,15 @@ var a = setInterval(function () {
     { 
         clearInterval(a) 
     } 
-}, 1000) //循环时间 这里是1秒
-</code></pre><p><a href="https://blog.csdn.net/ufo00001/article/details/73251142" target="_blank" rel="noopener">微信小程序 循环执行 设定固定时间间隔</a></p>
+}, 1000) //循环时间 这里是1秒</code></pre><p><a href="https://blog.csdn.net/ufo00001/article/details/73251142" target="_blank" rel="noopener">微信小程序 循环执行 设定固定时间间隔</a></p>
 
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
           <div class="reward-open">赏<div class="reward-main">
               <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6null"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6null"></li>
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6http://cdn.our-love.top/%23/img/custom/donatezfb.png"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6http://cdn.our-love.top/%23/img/custom/donatewx.png"></li>
               </ul>
             </div>
           </div>
@@ -482,7 +478,7 @@ var a = setInterval(function () {
           
             <a href="/2019/06/18/vscode好用的插件/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
               </div>
               <span class="label">
               Previous Post</span>
@@ -500,7 +496,7 @@ var a = setInterval(function () {
           
             <a href="/2019/06/17/python各种模块下载地址/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
               </div>
               <span class="label">
               Next Post</span>
@@ -529,7 +525,7 @@ var a = setInterval(function () {
 </script>
 
       <section class="author-profile">
-        <div class="info" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <a href="srclove.cn" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/bilibili.jpg" itemprop="image" alt="dearzhe" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
@@ -552,7 +548,7 @@ var a = setInterval(function () {
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词...">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -595,7 +591,7 @@ var a = setInterval(function () {
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages</a>
         </span>
       </p>
     </div>
@@ -615,7 +611,7 @@ var a = setInterval(function () {
 <script type="text/javascript" src="/js/zoom.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine@1.3.4/dist/Valine.min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
 <!-- 不蒜子 网页计数器 -->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
@@ -679,7 +675,7 @@ $(document).ready(function() {
       </div>
     </div>
   </section>
-  <div id="mo-nav" class>
+  <div id="mo-nav" class="">
   <div class="m-avatar">
     <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/startdash/wangshiwu.jpg">
   </div>
@@ -915,7 +911,29 @@ $(document).ready(function() {
     background: rgba(255, 255, 255, 0.8);
   }
 </style>
-<div class="aplayer" data-id="2660651585" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="false" data-loop="all" data-order="random" data-preload="auto" data-volume="0.7" data-mutex="true" < div>
+<div class="aplayer"
+
+    data-id="2660651585"
+
+    data-server="netease"
+
+    data-type="playlist"
+
+    data-fixed="true"
+
+    data-autoplay="false"
+
+    data-loop="all"
+
+    data-order="random"
+
+    data-preload="auto"
+
+    data-volume="0.7"
+
+    data-mutex="true"
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
 <script>
   $(function(){
@@ -927,7 +945,7 @@ $(document).ready(function() {
       }
     })
   });
-</script></div>
+</script>
 </body>
         <script type="text/javascript" src="../source/js/custom.js"></script>
 </html>
