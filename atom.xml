@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-09-11T14:02:29.539Z</updated>
+  <updated>2019-09-11T15:30:12.478Z</updated>
   <id>/</id>
   
   <author>
@@ -21,9 +21,18 @@
     <link href="/2019/09/11/oracle%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>/2019/09/11/oracle常用命令/</id>
     <published>2019-09-11T14:02:29.000Z</published>
-    <updated>2019-09-11T14:02:29.539Z</updated>
+    <updated>2019-09-11T15:30:12.478Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;登录&lt;br&gt;使用系统用户请登录:&lt;br&gt;&lt;code&gt;[username/password] [@server] [as sysdba|sysoper]&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;查看登陆用户:&lt;br&gt;&lt;code&gt;show
+        
+      
     
     </summary>
     

@@ -409,7 +409,17 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          
+          <p>登录<br>使用系统用户请登录:<br><code>[username/password] [@server] [as sysdba|sysoper]</code>  </p>
+<p>查看登陆用户:<br><code>show user</code><br>数据字典——查看其他用户信息:<br><code>desc dba_users</code>  -&gt; <code>select username from dba_users;</code><br>启动|关闭 <code>scott</code> 用户<br><code>alter user username(scott) account unlock|lock;</code> -&gt;<code>alter user scott account unlock;</code>  </p>
+<p>表空间<br><code>dba_tablespces、user_tablespaces</code>  数据字典<br><code>dba_users、user_users</code> 数据字典</p>
+<p>查看表空间<br><code>desc dba_tablespaces</code> -&gt;<code>select tablespaces from dba_table_spaces</code>;   </p>
+<p>设置用户默认表空间和临时表空间<br><code>ALTER USER username DEFAULT|TEMPPORARY TABLESPACE tablespaces_name</code>;  </p>
+<p>创建表空间<br>CREATE [TEMPORARY] TABLESPACE tablespace_name TEMPFILE|DATAFILE ‘XX.dbf’ SIZE xx -&gt;</p>
+<p><code>CREATE TABLESPACE test1_tablespace DATAFILE &#39;testfile.dbf&#39; size 10m;</code><br><code>Create tempspace tablespace temptest1_tablespace TEMPFILE &#39;tempfile.dbf&#39; size 10m;</code></p>
+<p>修改表空间状态<br>设置表空间联机脱机状态<br>ALTER TABLESPACE tablespace_name ONLINE|OFFLINE;</p>
+<p>设置只读或可读写状态<br>ALTER TABLESPACE tablespace_name READ ONLY|READ WRITE;</p>
+<p>修改表空间数据文件<br>添加|删除 表空间数据文件<br>ALTER TABLESPACE tablespace_name ADD|DROP DATAFILE ‘xx.dbf’ size xx;</p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
