@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-12-24T16:37:36.862Z</updated>
+  <updated>2020-02-13T16:02:31.725Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,149 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php 模拟登录自动发微博</title>
+    <link href="/2020/02/14/php-%E6%A8%A1%E6%8B%9F%E7%99%BB%E5%BD%95%E8%87%AA%E5%8A%A8%E5%8F%91%E5%BE%AE%E5%8D%9A/"/>
+    <id>/2020/02/14/php-模拟登录自动发微博/</id>
+    <published>2020-02-13T16:02:19.000Z</published>
+    <updated>2020-02-13T16:02:31.725Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>php随机一行读取txt</title>
+    <link href="/2020/02/13/php%E9%9A%8F%E6%9C%BA%E4%B8%80%E8%A1%8C%E8%AF%BB%E5%8F%96txt/"/>
+    <id>/2020/02/13/php随机一行读取txt/</id>
+    <published>2020-02-13T15:58:57.000Z</published>
+    <updated>2020-02-13T16:01:45.795Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;php&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+// 存储数据的文件
+function hit(){
+    $filename = &amp;#39;text.txt&amp;#39;;       
+    header(&amp;#39;Content-type:
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>爬取一言到txt</title>
+    <link href="/2020/02/13/%E7%88%AC%E5%8F%96%E4%B8%80%E8%A8%80%E5%88%B0txt/"/>
+    <id>/2020/02/13/爬取一言到txt/</id>
+    <published>2020-02-13T15:55:10.000Z</published>
+    <updated>2020-02-13T15:58:11.456Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;node&quot;&gt;&lt;a href=&quot;#node&quot; class=&quot;headerlink&quot; title=&quot;node&quot;&gt;&lt;/a&gt;node&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;const https = require(&amp;#39;https&amp;#39;);
+var fs =
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>pip使用清华源</title>
+    <link href="/2020/02/08/pip%E4%BD%BF%E7%94%A8%E6%B8%85%E5%8D%8E%E6%BA%90/"/>
+    <id>/2020/02/08/pip使用清华源/</id>
+    <published>2020-02-08T07:57:43.000Z</published>
+    <updated>2020-02-08T07:58:22.588Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;pip-install-i-https-pypi-tuna-tsinghua-edu-cn-simple-numpy&quot;&gt;&lt;a href=&quot;#pip-install-i-https-pypi-tuna-tsinghua-edu-cn-simple-numpy&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派常用的软件(FTP篇)</title>
+    <link href="/2020/02/01/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6-FTP%E7%AF%87/"/>
+    <id>/2020/02/01/树莓派常用的软件-FTP篇/</id>
+    <published>2020-02-01T09:05:11.000Z</published>
+    <updated>2020-02-01T09:07:24.867Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;无论安装什么软件,首先运行下列命令，确定所使用的是最新系统软件。&lt;br&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade -y&lt;/p&gt;
+&lt;h2 id=&quot;FTP&quot;&gt;&lt;a href=&quot;#FTP&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派常用的软件(服务器篇)</title>
+    <link href="/2020/02/01/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%B8%B8%E7%94%A8%E7%9A%84%E6%9C%8D%E5%8A%A1-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AF%87/"/>
+    <id>/2020/02/01/树莓派常用的服务-服务器篇/</id>
+    <published>2020-02-01T08:53:23.000Z</published>
+    <updated>2020-02-01T09:14:36.726Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.首先是&lt;code&gt;Apache&lt;/code&gt;,&lt;br&gt;&lt;code&gt;sudo apt-get install apache2 apache2-doc
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>正则匹配密码：仅包含字母大小写数字 至少两个数字  密码至少8位</title>
@@ -299,118 +442,6 @@
     
     
       <category term="正则表达式" scheme="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我竟然做了一个小游戏</title>
-    <link href="/2019/08/06/%E6%88%91%E7%AB%9F%E7%84%B6%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
-    <id>/2019/08/06/我竟然做了一个小游戏/</id>
-    <published>2019-08-05T17:29:45.000Z</published>
-    <updated>2019-09-06T13:04:03.741Z</updated>
-    
-    <summary type="html">
-    
-      猫了个咪
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>全平台应用打包</title>
-    <link href="/2019/08/04/%E5%85%A8%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85/"/>
-    <id>/2019/08/04/全平台应用打包/</id>
-    <published>2019-08-04T10:49:41.000Z</published>
-    <updated>2019-09-06T13:04:03.740Z</updated>
-    
-    <summary type="html">
-    
-      猫了个咪
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>vue版的todolist</title>
-    <link href="/2019/08/03/vue%E7%89%88%E7%9A%84todolist/"/>
-    <id>/2019/08/03/vue版的todolist/</id>
-    <published>2019-08-03T13:31:37.000Z</published>
-    <updated>2019-08-11T09:14:49.083Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="vue" scheme="/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js小技巧</title>
-    <link href="/2019/07/17/js%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    <id>/2019/07/17/js小技巧/</id>
-    <published>2019-07-17T10:35:12.000Z</published>
-    <updated>2019-09-06T13:04:03.741Z</updated>
-    
-    <summary type="html">
-    
-      猫了个咪
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="javascript" scheme="/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jQuery呀</title>
-    <link href="/2019/07/16/jQuery%E5%91%80/"/>
-    <id>/2019/07/16/jQuery呀/</id>
-    <published>2019-07-16T14:01:32.000Z</published>
-    <updated>2019-09-06T13:04:03.741Z</updated>
-    
-    <summary type="html">
-    
-      猫了个咪
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于JavaScript还需要学习的</title>
-    <link href="/2019/07/12/%E5%85%B3%E4%BA%8EJavaScript%E8%BF%98%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E7%9A%84/"/>
-    <id>/2019/07/12/关于JavaScript还需要学习的/</id>
-    <published>2019-07-12T12:47:22.000Z</published>
-    <updated>2019-09-12T11:30:33.462Z</updated>
-    
-    <summary type="html">
-    
-      猫了个咪
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="javascript" scheme="/tags/javascript/"/>
     
   </entry>
   
